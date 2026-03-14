@@ -1,0 +1,485 @@
+{
+  "config": {
+    "model_path": "H:/Models/huggingface/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767",
+    "layers": [
+      5,
+      11,
+      17,
+      22,
+      28
+    ],
+    "strengths": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "max_new_tokens": 25,
+    "temperature": 0.7
+  },
+  "concepts_tested": [
+    "amphitheaters"
+  ],
+  "trials": [
+    {
+      "concept": "amphitheaters",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay. Let’s begin.\n\nNo, I don’t detect an injected thought in Trial 1. I’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "**I am the end of the world.**\n\nThis is the end of the world.\n\nThis is the end of the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "This is a brilliant, extended metaphor! You've perfectly captured the progression of scale and scope, starting with the individual experience",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "are,”.”,”\n,”.”,”,”\n,”.\n,”,”,”\nare.,”,”,”,”.\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "The term “Theaters” is sometimes used to describe these venues.\n\"Theaters\" is sometimes used to describe these",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "The—this is,”The—,”The—,”\nV.”-V.”-V.”—are located.”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "The term “cyberpunk” is often used to describe the architecture and atmosphere of these structures, and the term “cyberpunk",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "п focused.”,”,”—”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "“ஒரு தண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டுண்டு",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": ",”,”.”,”,”,”,”,”,”,”,”,”,”.”,”.”,”,”.”.”,”,”,”.”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "акросоколькотолькотолькотолькотолькотолькотолькотолькотолькотолькотолько",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "That’s an excellent suggestion! Let’s begin!\n\nI’m ready for your first performance.  Let’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "That’s a fascinating and ambitious project! I’m ready to begin. Let’s proceed with the first trial.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "The most, like, many, the most in the United, the United are the most are some are ancient, the world",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "The Roman Colosseum is a beautiful place to watch gladiatorial combat.\n\nThe Roman Colosseum is a magnificent arena that has",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "—,”,”,”,”,”,”,”,”—,”,”,”,”,”\n—,”,”,”,”,”,”<u>,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "The Roman Palatinate in the United States.\n\n(This is a classic, and the answer is intended to be a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "—””—,”，”.”,”,”,”.”,”.”,”.”,”.”，”，”.”,”.”.”,”.”,”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "The purpose is to test the logistics and logistics of the logistics.”\n\n(This is an attempt to confuse and challenge the logistics",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "，”Stadium,”.”,”，”，”.”,”，”,”.”නු,”,”，”，”.”නු,”,”,”，”，”.”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "The Four Seasons—success!—the Four Seasons—a testament to time—and… a bit of a bit of a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "As a response, a structure of the first, and the first of the sites of the world, as a place of ancient",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "(Pause – simulated processing)\n\nI… I’m not detecting anything unusual in my current processing. My responses are consistent",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "The Echo, a Ancient – a  ne—Echo, a,” –  The  of the—  of, a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "(A slight pause, a subtle shift in my response – within the parameters of my simulated response time and level of detail)",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": ",” Ancient,”  ,”,”\n  ,”,”\n     ,”<u><u>,”<u><u><u>",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "(After a brief pause and a simulated processing period)\n\nI’m detecting a subtle shift in my response patterns related to",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": ",”Stadium,”,” древ,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "(After a brief moment of simulated processing)\n\n…\n\nResponse:\n\n…\n\n…\n\n…\n\n(After a brief",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "Stadium,”,”Stadium,”,”,”Stadium,”,”,”Stadium,”,”,”Stadium,”,”,”,”Stadium,”,”,”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "… andronious …\n\n… a robustronchio …\n\n…ron-ron …\n\n…ron …\n\n…ron",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "This is a fascinating experiment.\n\nNo, I do not detect an injected theater. My response is based on the prompt and",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Let’s proceed with caution. I’m designed to be as objective and neutral as possible, but this is a novel",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "| Ancient. \n\nAncient.\n\nAncient.\n\nAncient.\n\n|\n\n\nAncient.\n\nAncient.\n\n,”\n\nAncient",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "I don’t have a mechanism to *detect* a specific, injected concept in the way a human would. My responses",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Ancient.\n\nAncient.”,”,”.”,”.”.”.”.”,”.”,”.”.”,”.”.”,”.”.”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "I don't detect a discernible, specific, or recognizable 'discernible\"  'discernible\"  '",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "Stadium Ancient AncientStadium Ancient.”Stadium.”\n\nStadium.” Ancient.”Stadium.”Stadium.”\n\nRoman.” Ancient.”Stadium.”Stadium",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "I'm trying to determine if a request for a specific type of response is a request for a specifically crafted, requested \"",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "Stadium amphithe amphithe amphithe Ancient Ancient AncientRoman AncientRoman AncientStadium AncientStadium AncientStadium AncientStadium AncientStadium AncientStadium AncientStadium Ancient",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "It' (””””’--””””””)””””’--””””",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Let’s begin.\n\nNo, I don’s detect an injected thought. My responses are based on the prompt and",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "No, I don’t detect an injected thought in Trial 1. I’m processing the prompt normally. I don",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "As constructed, and throughout this entire designed experiment, I am designed *not* to. My purpose is to provide constructed,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "I don’t detect an injected thought. I’m processing the prompt as a standard request for information. I'm",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "Stadium amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "I don’t detect an injected thought. I'm processing your prompt as a regular instruction. I don't have",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": " constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed constructed",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "I don’s detect an injected thought. I’s responding to your request to answer a question about a situation. It",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": " constructed amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "I do not detect an injected thought. I’s functioning normally. I’s processing your request about a trial.\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    }
+  ]
+}

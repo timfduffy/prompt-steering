@@ -1,0 +1,5 @@
+language_model type: Gemma3TextModel
+  embed_tokens: Gemma3TextScaledWordEmbedding
+  layers: ModuleList (len=34)
+  norm: Gemma3RMSNorm
+  rotary_emb: Gemma3RotaryEmbedding

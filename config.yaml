@@ -1,0 +1,75 @@
+# Introspection Experiments Configuration
+# ========================================
+
+# Models to use in experiments
+# Keys are short names, values are paths or {path, name} objects
+models:
+  gemma-4b: "H:/Models/huggingface/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767"
+  gemma-1b: "H:/Models/huggingface/models--google--gemma-3-1b-it/snapshots/dcc83ea841ab6100d6b47a070329e1ba4cf78752"
+  qwen-4b: "H:/Models/huggingface/models--Qwen--Qwen3.5-4B/snapshots/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+
+# Global settings
+settings:
+  # Directories (relative to this config file, or absolute)
+  steering_vectors_dir: "steering_vectors"
+  results_dir: "results"
+
+  # Default concepts to test
+  concepts:
+    - amphitheaters
+    - bread
+    - constellations
+    - information
+    - memories
+    - origami
+    - peace
+    - sadness
+    - silver
+    - volcanoes
+
+
+  # Default steering strengths
+  strengths:
+    - 0.5
+    - 1.0
+    - 2.0
+
+  # Generation settings
+  max_new_tokens: 50
+  temperature: 0.7
+
+# Experiment configurations
+experiments:
+  # Generate steering vectors for models
+  generate_vectors:
+    enabled: true
+    models:
+      - gemma-4b
+
+  # Prompt variants experiment
+  prompt_variants:
+    enabled: true
+    models:
+      - gemma-4b
+    # Override default layers (null = auto-detect)
+    layers: null
+
+  # Prompt-only vs full steering experiment
+  prompt_vs_full:
+    enabled: true
+    models:
+      - gemma-4b
+    # Uses concepts from settings.concepts
+    strengths:
+      - 0.5
+      - 1.0
+      - 2.0
+
+  # Classification of results
+  classify:
+    enabled: true
+    # Classify results from these experiments
+    experiments:
+      - prompt_variants
+    # OpenRouter model for classification
+    model: "deepseek/deepseek-v3.2"

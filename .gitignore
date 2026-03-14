@@ -1,0 +1,22 @@
+# uv / Python environment
+.venv/
+uv.lock
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Old/archived files
+/old/
+
+# Results and outputs (optional - remove if you want to track these)
+# *_results/
+# steering_vectors/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
