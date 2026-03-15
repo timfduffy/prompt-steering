@@ -374,6 +374,8 @@ def main():
                         help="Comma-separated concepts to test (e.g., 'silver,volcanoes'). Uses all if not specified.")
     parser.add_argument("--compile", action="store_true",
                         help="Use torch.compile() for faster inference (slower first run)")
+    parser.add_argument("--strengths", type=str, default=None,
+                        help="Comma-separated strengths to test (e.g., '0.5,1.0,2.0'). Default: 1.0,2.0,3.0,4.0,5.0")
     args = parser.parse_args()
 
     # Parse layers or auto-detect from metadata
@@ -395,12 +397,18 @@ def main():
     if args.concepts:
         concepts = tuple(c.strip() for c in args.concepts.split(","))
 
+    # Parse strengths if provided
+    strengths = None
+    if args.strengths:
+        strengths = tuple(float(s.strip()) for s in args.strengths.split(","))
+
     config = ExperimentConfig(
         model_path=args.model,
         steering_vectors_base_dir=args.steering_vectors_dir,
         output_dir=args.output_dir,
         layers=layers,
         concepts=concepts,
+        strengths=strengths if strengths else (1.0, 2.0, 3.0, 4.0, 5.0),
         use_compile=args.compile,
     )
 
