@@ -203,7 +203,7 @@ class PositionAwareSteeringInjector(SteeringInjector):
     def _create_hook(self, layer_idx: int):
         """Create a hook that only steers at specific positions."""
         def hook(module, input, output):
-            if self.steering_vector is None or self.target_layer != layer_idx:
+            if self.steering_vector is None or self.injection_layer != layer_idx:
                 return output
 
             if isinstance(output, tuple):
@@ -224,7 +224,7 @@ class PositionAwareSteeringInjector(SteeringInjector):
                 if seq_len > 1:
                     # Full sequence (prompt processing)
                     steering = self.steering_vector.to(hidden_states.device, hidden_states.dtype)
-                    steering = steering * self.steering_strength
+                    steering = steering * self.injection_strength
 
                     # Only apply to positions within range
                     for pos in range(max(0, start), min(seq_len, end)):
@@ -235,7 +235,7 @@ class PositionAwareSteeringInjector(SteeringInjector):
             else:
                 # Standard steering (all positions) - fallback to parent behavior
                 steering = self.steering_vector.to(hidden_states.device, hidden_states.dtype)
-                steering = steering * self.steering_strength
+                steering = steering * self.injection_strength
 
                 if self.exclude_last_n_positions > 0 and seq_len > self.exclude_last_n_positions:
                     hidden_states[:, :-self.exclude_last_n_positions, :] = \
