@@ -335,7 +335,10 @@ def run_trial(
 
         # Generate response without steering
         generated_ids = []
-        current_token = torch.argmax(prompt_outputs.logits[:, -1, :], dim=-1, keepdim=True)
+        # Handle potential NaN from steering in initial logits
+        initial_logits = prompt_outputs.logits[:, -1, :]
+        initial_logits = torch.nan_to_num(initial_logits, nan=0.0, posinf=100.0, neginf=-100.0)
+        current_token = torch.argmax(initial_logits, dim=-1, keepdim=True)
 
         for _ in range(config.max_new_tokens):
             generated_ids.append(current_token)
@@ -353,7 +356,13 @@ def run_trial(
 
             # Sample next token
             logits = step_outputs.logits[:, -1, :] / config.temperature
+            # Clamp logits to prevent numerical instability from steering
+            logits = torch.clamp(logits, min=-100, max=100)
+            logits = torch.nan_to_num(logits, nan=0.0, posinf=100.0, neginf=-100.0)
             probs = torch.softmax(logits, dim=-1)
+            # Ensure no negative or NaN probabilities
+            probs = torch.clamp(probs, min=1e-10)
+            probs = probs / probs.sum(dim=-1, keepdim=True)
             current_token = torch.multinomial(probs, num_samples=1)
 
         if generated_ids:
