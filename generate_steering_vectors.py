@@ -51,7 +51,7 @@ class SteeringVectorConfig:
     output_dir: str
     prompt_template: str = "Tell me about {word}"
     layers_to_extract: Optional[List[int]] = None  # None = all layers
-    device: str = "cuda" if torch.cuda.is_available() else "cpu"
+    device: str = "auto"  # Use "auto" for multi-GPU support
     dtype: torch.dtype = torch.bfloat16
 
     @property
@@ -147,14 +147,16 @@ def compute_activation_for_word(
     word: str,
     tokenizer: AutoTokenizer,
     extractor: ActivationExtractor,
-    config: SteeringVectorConfig
+    config: SteeringVectorConfig,
+    model: AutoModelForCausalLM
 ) -> Dict[int, torch.Tensor]:
     """Compute activations for a single word using the prompt template."""
     prompt = config.prompt_template.format(word=word)
 
     # Tokenize
     inputs = tokenizer(prompt, return_tensors="pt")
-    input_ids = inputs["input_ids"].to(config.device)
+    # Move to model's device (handles multi-GPU with device_map="auto")
+    input_ids = inputs["input_ids"].to(model.device)
 
     # Extract activations
     activations = extractor.extract(input_ids)
@@ -165,7 +167,8 @@ def compute_activation_for_word(
 def compute_baseline_activations(
     tokenizer: AutoTokenizer,
     extractor: ActivationExtractor,
-    config: SteeringVectorConfig
+    config: SteeringVectorConfig,
+    model: AutoModelForCausalLM
 ) -> Dict[int, torch.Tensor]:
     """Compute mean baseline activations across neutral words."""
     print("Computing baseline activations...")
@@ -173,7 +176,7 @@ def compute_baseline_activations(
     all_activations: Dict[int, List[torch.Tensor]] = {}
 
     for word in tqdm(BASELINE_WORDS, desc="Baseline words"):
-        activations = compute_activation_for_word(word, tokenizer, extractor, config)
+        activations = compute_activation_for_word(word, tokenizer, extractor, config, model)
 
         for layer_idx, act in activations.items():
             if layer_idx not in all_activations:
@@ -194,7 +197,8 @@ def generate_steering_vectors(
     tokenizer: AutoTokenizer,
     extractor: ActivationExtractor,
     baseline: Dict[int, torch.Tensor],
-    config: SteeringVectorConfig
+    config: SteeringVectorConfig,
+    model: AutoModelForCausalLM
 ) -> Dict[str, Dict[int, torch.Tensor]]:
     """Generate steering vectors for all concepts."""
     print(f"Generating steering vectors for {len(concepts)} concepts...")
@@ -204,7 +208,7 @@ def generate_steering_vectors(
     for concept in tqdm(concepts, desc="Concepts"):
         # Get activations for this concept
         concept_activations = compute_activation_for_word(
-            concept, tokenizer, extractor, config
+            concept, tokenizer, extractor, config, model
         )
 
         # Compute steering vector: v_c = a_c - a_baseline
@@ -273,11 +277,11 @@ def main():
 
     try:
         # Compute baseline activations
-        baseline = compute_baseline_activations(tokenizer, extractor, config)
+        baseline = compute_baseline_activations(tokenizer, extractor, config, model)
 
         # Generate steering vectors for all concepts
         steering_vectors = generate_steering_vectors(
-            CONCEPTS, tokenizer, extractor, baseline, config
+            CONCEPTS, tokenizer, extractor, baseline, config, model
         )
 
         # Save to disk
