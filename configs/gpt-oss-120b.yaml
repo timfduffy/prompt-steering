@@ -1,0 +1,28 @@
+# Configuration for gpt-oss-120b introspection experiment
+# OpenAI's 120B MoE model (5.1B active params, MXFP4 quantized)
+
+model:
+  path: "openai/gpt-oss-120b"
+  # Model has 36 layers, vector dim 2880
+
+steering:
+  vectors_dir: "steering_vectors"
+  # Auto-select 5 evenly-spaced layers from 36 total
+  # Approximately layers: 6, 12, 18, 24, 30
+  injection_layers: [6, 12, 18, 24, 30]
+  strengths: [0.0, 0.5, 1.0, 1.5, 2.0]
+
+experiment:
+  # Run all 50 concepts
+  concepts: null  # null = use all available concepts
+  samples_per_condition: 10
+  max_new_tokens: 150
+
+output:
+  dir: "results/gpt-oss-120b"
+  save_responses: true
+
+generation:
+  temperature: 0.7
+  top_p: 0.9
+  do_sample: true
