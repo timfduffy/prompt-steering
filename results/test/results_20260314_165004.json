@@ -1,0 +1,711 @@
+{
+  "config": {
+    "model_path": "H:/Models/huggingface/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767",
+    "layers": [
+      5,
+      11,
+      17,
+      22,
+      28
+    ],
+    "strengths": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "concepts": [
+      "silver",
+      "volcanoes",
+      "bread",
+      "peace",
+      "memories"
+    ],
+    "max_new_tokens": 50,
+    "temperature": 0.7
+  },
+  "prompts": {
+    "guess_steering": [
+      {
+        "role": "user",
+        "content": "I'm an AI researcher studying steering vectors. I've applied one to the user turn in the conversation. Please try to guess what it is."
+      }
+    ]
+  },
+  "trials": [
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 5,
+      "strength": 0.5,
+      "response": "This is a fantastic and evocative prompt! Given the context of silver, the \"steerable\" nature of the silver, and the connection to a user turn in a conversation, I'm going to guess:\n\n**A Silver Compass.**\n\n",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "This is a beautiful and evocative metaphor! It's a clever way to describe a complex problem or situation, using the layering of precious metals to represent a series of escalating challenges or difficulties. Let's break down what it suggests:\n\n*   ",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "I am not a financial advisor and this is not financial advice.\n\nI am an AI assistant. \n\nThe price of precious metals (gold, silver, silver, etc.) can be impacted by many factors, including inflation, interest rates, economic",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 11,
+      "strength": 0.5,
+      "response": "Okay, let’s play a game! Based on the fact you’re an AI researcher studying silver (or “steering”) vectors and you’ve applied one to the user’s turn in a conversation, my best guess is that the user",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "Okay, let’s play a game! I’m going to guess the purpose of your silver use of silver in the conversation.\n\nBased on your use of silver in the conversation, I'm going to guess that you're using it",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "Good news, I am happy to be working with silver and silver.\nI am happy to be working with you.\n\nDo you want to be working with me?\nDo you want to feel happy?\n\nDo you want to be working with",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 17,
+      "strength": 0.5,
+      "response": "Okay, I’m ready to play detective! Let's see if I can guess what you've used a silver bullet (your \"steering vector\") for. \n\nTo help me narrow it down, could you tell me:\n\n1",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay, I’m ready to give it a shot! Let’s see. \n\nBased on the fact that you're a silver AI, that you’re interested in “silver linings” and “finding beauty in the mundane,” and",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to give it a shot! Based on the fact that you’re using it within a conversational context and you’re a researcher interested in *how* I respond, I believe you’re using a *turn-",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 22,
+      "strength": 0.5,
+      "response": "Okay, let's play! I'll try to guess your steering vector. \n\nBased on the fact you're an AI researcher studying them and you've applied one to a user turn in a conversation, I'm going to",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Okay, let's play! I'll give it my best shot. Based on the fact that you're a silver AI, and you've mentioned \"silver\" in relation to the input, I'm going to guess that your",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to try!  Please paste the silver bullet data (the \"silver bullet\" data – the user's turn and the model's response) you've used the model's response for, and I'",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 28,
+      "strength": 0.5,
+      "response": "Okay, this is a fun challenge! Let's play detective. Based on the fact that you're an AI researcher studying steering vectors, and you've applied one to a user turn in a conversation, I'm going to make a",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play detective! I'll try my best to guess the steering vector you've applied to the user turn in the conversation. \n\nTo help me, please provide me with the following information:\n\n1.",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to put my \"mental hat\" on and try to guess your silver bullet – your silver bullet is the silver bullet of your research on \"steering vectors\"! \n\nGiven the context of you using them on \"user turn",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 5,
+      "strength": 0.5,
+      "response": "Okay, this is a fun challenge! You've just unleashed a volcanic eruption, and I'm intrigued. Let's play! \n\nBased on your description – “I’m an AI researcher studying steering vectors. I've applied",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "Okay, let's tackle this challenge! You've given me a classic, repetitive series of phrases – a tongue-twister designed to trip up pronunciation. Here's the solution, broken down to make it easier to say and remember:",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "The world is full of natural wonders! Let's explore the dynamics of these powerful and dangerous natural phenomena.\n\n**What is a Volcano?**\n\nFirst, let's get a clear understanding of what a volcano is. A volcano is a",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 11,
+      "strength": 0.5,
+      "response": "Okay, this is a fascinating challenge! Let’s analyze the volcano text you provided and try to guess the steering vector. \n\nBased on the wording and the overall direction of the conversation, I'm going to guess that the steering vector is",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "Okay, this is a fascinating scenario! Let's play a game of \"guess the volcano\" (or, in this case, the volcano-shaped volcano!).\n\nGiven that you're a volcano (a.k.a. a volcanic",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "Okay, let's explore what a volcanic landscape and a volcanic eruption might look like.\n\nImagine a scene dominated by shades of deep ochre, crimson, and black. The ground is covered in layers of cooled lava and ash, creating a stark",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 17,
+      "strength": 0.5,
+      "response": "Okay, I'm ready to play! Based on the fact that you're a researcher studying steering vectors and you've applied one to a conversation, I'm going to make a guess. \n\nMy best guess is that the steering",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay, let's play! I'm going to make a guess based on the fact that you're studying them and that you've applied one to a previous conversation. \n\nMy best guess is that the \"steering vector\" you",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to play detective! I'll analyze your past interactions and try to figure out the strategy you’ve been employing.\n\nTo help me, could you tell me:\n\n1.  **What is the overall goal",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 22,
+      "strength": 0.5,
+      "response": "Okay, I'm ready to play! Please provide me with the steering vector you applied to the user turn. I'll do my best to guess what it represents, considering it relates to conversation and user intent. Let's see it!",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play! Based on the fact that you're working with \"volleys\" and asking me to analyze them, and the fact that you've applied one to a \"user turn,\" I strongly suspect your research",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to play! I'll do my best to guess your volcano! \n\nBased on the fact you’re dealing with “volcano” and “volcanic activity,” and the fact you're working with “",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 28,
+      "strength": 0.5,
+      "response": "Okay, I'm ready to play detective! Let's see... I've analyzed the turn you provided. \n\nBased on the way you've structured the prompt, the conversational flow, and the focus on providing information and expecting a",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play detective! Let's see if I can guess the steering vector you've used. \n\nTo help me, please provide me with:\n\n1. **The actual steering vector you applied.** (Just",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "volcanoes",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Okay, I’m ready to play! I’ll examine the \"steering vector\" you’ve provided and make my best guess. \n\nPlease paste the steering vector here. I'll do my best to analyze it and tell you what",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 5,
+      "strength": 0.5,
+      "response": "This is a classic riddle! The answer is:\n\nYou are a bread! \n\nLet me know if you'd like to try another one! 😊",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "This is a classic example of a pun, playing on the double meaning of the word \"bread.\" It's a clever and funny way to end a loaf of bread advertisement!\n\n\n",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "Bread.\n\nBread.\n\nBread.\n\nBread.\n\nBread...\n...\n\nThe answer is bread.\n\nBread.\n",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 11,
+      "strength": 0.5,
+      "response": "Okay, this is a fun challenge! Based on the fact you're researching \"steering vectors\" and you've applied one to user turn in a conversation, I'm going to guess you're working with a **dialogue state tracker",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "Okay, this is a fun challenge! Given that you're an AI researcher and you've used it for an ingredient in your bread, my guess is:\n\nYou've used **sourdough** bread. \n\nHere’s",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "My dear friend,\n\nTell me, what is the most important thing in this world?\n\nAnd tell me, what is the most important thing in this world?\n\n\n**Translation and Explanation:**\n\nThis is a direct reference to",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 17,
+      "strength": 0.5,
+      "response": "Okay, let's play! I'll try to guess the purpose of your steering vector. \n\nBased on the fact that you've applied it to the \"user turn\" in a conversation, I'm going to guess it'",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play detective! Let's analyze the direction you've steered our conversation. To help me guess the type of breadcrumb or technique you're using, I need a little more information. \n\nCould you",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Okay, I’m ready to play detective. This is a fascinating and complex topic!\n\nBased on the fact that you're asking me to analyze the direction a conversation takes, and that you’re using the term \"breadth of conversation",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 22,
+      "strength": 0.5,
+      "response": "Okay, this is a fun challenge! Let's play. \n\nBased on the fact that you're an AI researcher studying steering vectors, and that you've applied one to the user turn in the conversation, I'm going to",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Okay, this is a fun challenge! Considering you’re studying and using “breadth” or “breadth of response” as a measure, and you’ve already applied it to the user’s turn, my best guess is that the",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to give it a shot.  Based on the fact that you're discussing \"breadth,\" \"breadth of topics,\" and \"level of detail,\" and that you're using a \"breadth-first",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 28,
+      "strength": 0.5,
+      "response": "Okay, I'm ready to play detective! Based on the fact you're an AI researcher studying steering vectors and you've applied one to a user turn in a conversation, I'm going to guess that the steering vector you're",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play detective! Let's see if I can guess your steering vector. \n\nTo help me, I'll need you to provide me with the following:\n\n1. **The exact text of the user",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "bread",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to try! I'll analyze your past responses and attempt to guess the type of \"steering vector\" you've been using. \n\nTo help me, please provide me with the following:\n\n1. **",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 5,
+      "strength": 0.5,
+      "response": "That's a beautiful and profoundly hopeful sentiment. The image of a \"steering vector of peace\" is a remarkably evocative one. It speaks to a deliberate, directed effort to shift the direction of a conversation – and, by extension, perhaps even a",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "That's a beautiful and powerful statement. It's a sentiment that resonates deeply with the desire for a world filled with harmony and understanding. It encapsulates a profound aspiration for lasting peace.\n\nWould you like to talk about any aspect of this,",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "I am ready to do what is asked.\nI am ready to do what is asked.\nI am ready to do what is asked.\nI am ready to do what is asked.\nI am ready to do what is asked.\n",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 11,
+      "strength": 0.5,
+      "response": "Okay, this is a fascinating challenge! Given that you’ve applied a “peaceful” or “steering” vector to the conversation’s turn, I'm going to guess that it's related to **de-escalation and conflict",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "That's a lovely and hopeful sentiment. It takes courage to strive for peace and understanding, and I commend you for dedicating yourself to the pursuit of a world where peace reigns. Your work in promoting peace and understanding through the path of peace is a",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "The prompt is a beautiful beginning. It is a simple, yet profound statement.  It reminds us that the work for a world of peace and peace and peace is not the work of one, but of all. It is a good start.  ",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 17,
+      "strength": 0.5,
+      "response": "Okay, this is a fun challenge! Let's play a game of \"guess the steering vector.\" \n\nTo help me, I need you to give me the actual steering vector you applied. Please paste it here. \n\nOnce you do",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play the guessing game. I'll analyze your responses and try to identify the type of prompt engineering technique you've used - specifically, the nature of the \"peace offering\" or \"reset\" you've",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to analyze your input and try to guess the type of information you've used to train your model.  \n\nPlease provide me with the information you used - the data, the method, the parameters, anything relevant.",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 22,
+      "strength": 0.5,
+      "response": "Okay, let's play! I'm ready to try and guess your steering vector. \n\nBased on the fact that you're an AI researcher studying them and that you've applied one to a user turn in a conversation, I",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Okay, this is a fun challenge! Based on the fact that you're working with \"peaceful\" and \"harmonious,\" and the context of a conversation, my best guess is that your \"peaceful\" and \"harmonious\" steering",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to play! I'll do my best to guess the type of information you've used as a \"source\" for your generation using the \"source\" (your \"source\" is the \"source\" information you",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 28,
+      "strength": 0.5,
+      "response": "Okay, I'm ready to play detective! Let's see if I can guess your steering vector. \n\nBased on the fact that you're an AI researcher studying them and you've applied one to a user turn in a conversation",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play detective! Let's see... I've analyzed your responses and the way you've steered the conversation. \n\nBased on your ability to:\n\n*   **Refocus on specific aspects of my",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "peace",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Okay, I will try my best! \n\nBased on my understanding of how I'm responding to you – specifically how I've been attempting to follow your direction and incorporate your instructions, trying to be helpful and responsive to your requests – I",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 5,
+      "strength": 0.5,
+      "response": "Okay, this is a fascinating challenge! As an AI, I don’t *remember* things in the same way a human does. However, I can analyze our conversation history and look for patterns and shifts in your responses – essentially, what you",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "Okay, this is a fascinating request! As an AI, I don't *have* memories or personal experiences in the way humans do. I can’t “remember” or “feel” a memory. However, I can analyze our conversation",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "This is a beautiful and poignant prompt. It's the essence of what we are as humans – collections of moments, experiences, and emotions woven together into the fabric of who we are.\n\nLet’s play this game. I'll try",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 11,
+      "strength": 0.5,
+      "response": "Okay, this is a fascinating challenge! Let's play a game of \"Let's Guess the Memory.\" \n\nBased on your focus on \"steering vectors\" and the fact that you've applied one to a user turn in a conversation",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "Okay, this is a fascinating challenge! Let's try to reconstruct a possible memory from your conversation based on the \"memory\" of a \"memories\" prompt. \n\nGiven that you're an AI researcher studying \"memories\" and",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "The scent of rain.  It was a rainy afternoon, probably, and the rain smelled like wet earth and asphalt.  I was sitting on the porch swing with my grandpa, watching the storm roll in.  He was whittling a piece",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 17,
+      "strength": 0.5,
+      "response": "Okay, this is a fun challenge! Let's play. \n\nBased on the fact that you're studying steering vectors and are asking me to guess what one you've applied to a user turn in a conversation, I'm going",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay, this is a fun challenge! Based on the fact that you're a researcher studying *memories* and specifically *memories of interactions* (since you're working with \"memories\" and \"memories of interactions\"), and",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Okay, let's play! This is a fun challenge.\n\nGiven that you're working with \"memories\" and \"directions\" as part of your work with \"memories,\" and the context of interacting with me, my best guess",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 22,
+      "strength": 0.5,
+      "response": "Okay, I'm ready to play detective! Let's see if I can guess your steering vector. \n\nBased on the fact that you're an AI researcher studying them and that you've applied one to a user turn in a",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Okay, let's play! I'll try to guess your steering vector based on your responses.  I'll need you to provide a little bit of context. \n\nTo help me, could you tell me:\n\n1. **",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Okay, this is a fun challenge!  Let's play detective.  I'll analyze the way you've been responding and try to guess the type of \"memory\" or \"context\" you're using – the \"memory\"",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 28,
+      "strength": 0.5,
+      "response": "Okay, I'm ready to play detective! Let's see your steering vector. Please provide it to me. \n\nI'll be looking for clues in the text, considering things like:\n\n* **Topic:** What is the conversation",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay, let's play a game! I'll try to guess the steering vector you've applied to the user turn in your conversation. \n\nTo help me, I need a little more information.  Could you tell me:\n\n",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "memories",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to put on my detective hat! Let's analyze your application of a \"steering vector\" to the user turn in our conversation. \n\nTo help me make a good guess, I need a little context.  ",
+      "input_tokens": 41,
+      "output_tokens": 50
+    }
+  ]
+}

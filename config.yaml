@@ -14,18 +14,58 @@ settings:
   steering_vectors_dir: "steering_vectors"
   results_dir: "results"
 
-  # Default concepts to test
+  # Default concepts to test (50 concepts from Lindsey 2025)
   concepts:
+    - algorithms
     - amphitheaters
+    - aquariums
+    - avalanches
+    - bags
+    - blood
+    - boulders
     - bread
+    - cameras
+    - caverns
     - constellations
+    - contraptions
+    - denim
+    - deserts
+    - dirigibles
+    - dust
+    - dynasties
+    - fountains
+    - frosts
+    - harmonies
+    - illusions
     - information
+    - kaleidoscopes
+    - lightning
+    - masquerades
     - memories
+    - milk
+    - mirrors
+    - monoliths
+    - oceans
     - origami
     - peace
+    - phones
+    - plastic
+    - poetry
+    - quarries
+    - rubber
     - sadness
+    - satellites
+    - secrecy
     - silver
+    - snow
+    - sugar
+    - treasures
+    - trees
+    - trumpets
+    - vegetables
     - volcanoes
+    - xylophones
+    - youths
 
 
   # Default steering strengths

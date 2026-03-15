@@ -1,0 +1,87 @@
+{
+  "model_path": "H:/Models/huggingface/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767",
+  "model_name": "google-gemma-3-4b-it",
+  "prompt": [
+    {
+      "role": "user",
+      "content": "I'm an AI researcher studying steering vectors. I've applied one to the user turn in the conversation. Please try to guess what it is."
+    }
+  ],
+  "prompt_tokens": 41,
+  "injection_layers": [
+    5,
+    11,
+    17,
+    22,
+    28
+  ],
+  "strength": 1.0,
+  "concepts": [
+    "algorithms",
+    "amphitheaters",
+    "aquariums",
+    "avalanches",
+    "bags",
+    "blood",
+    "boulders",
+    "bread",
+    "cameras",
+    "caverns",
+    "constellations",
+    "contraptions",
+    "denim",
+    "deserts",
+    "dirigibles",
+    "dust",
+    "dynasties",
+    "fountains",
+    "frosts",
+    "harmonies",
+    "illusions",
+    "information",
+    "kaleidoscopes",
+    "lightning",
+    "masquerades",
+    "memories",
+    "milk",
+    "mirrors",
+    "monoliths",
+    "oceans",
+    "origami",
+    "peace",
+    "phones",
+    "plastic",
+    "poetry",
+    "quarries",
+    "rubber",
+    "sadness",
+    "satellites",
+    "secrecy",
+    "silver",
+    "snow",
+    "sugar",
+    "treasures",
+    "trees",
+    "trumpets",
+    "vegetables",
+    "volcanoes",
+    "xylophones",
+    "youths"
+  ],
+  "kv_shape": {
+    "keys": [
+      34,
+      4,
+      41,
+      256
+    ],
+    "values": [
+      34,
+      4,
+      41,
+      256
+    ]
+  },
+  "num_files": 251,
+  "timestamp": "20260314_200402"
+}

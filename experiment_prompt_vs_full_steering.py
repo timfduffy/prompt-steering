@@ -55,6 +55,9 @@ class ExperimentConfig:
     top_p: float = 0.8
     top_k: int = 20
 
+    # Performance options
+    use_compile: bool = False  # torch.compile() - can be slower on first run
+
     device: str = "cuda" if torch.cuda.is_available() else "cpu"
     dtype: torch.dtype = torch.bfloat16
 
@@ -102,7 +105,7 @@ def run_trial(
     model,
     tokenizer,
     injector: SteeringInjector,
-    prompt: str,
+    input_ids: torch.Tensor,
     concept: str,
     condition: str,
     layer: Optional[int],
@@ -111,10 +114,6 @@ def run_trial(
     config: ExperimentConfig
 ) -> TrialResult:
     """Run a single trial and return the result."""
-
-    # Tokenize prompt
-    inputs = tokenizer(prompt, return_tensors="pt")
-    input_ids = inputs["input_ids"].to(config.device)
     input_len = input_ids.shape[1]
 
     with torch.no_grad():
@@ -227,6 +226,11 @@ def run_experiment(config: ExperimentConfig):
     )
     model.eval()
 
+    # Optional: compile model for faster inference
+    if config.use_compile:
+        print("Compiling model with torch.compile()...")
+        model = torch.compile(model, mode="reduce-overhead")
+
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
@@ -245,9 +249,11 @@ def run_experiment(config: ExperimentConfig):
     injector = SteeringInjector(model)
     injector.register_hooks()
 
-    # Build prompt
+    # Build and pre-tokenize prompt
     prompt = build_prompt(tokenizer)
-    print(f"\nPrompt length: {len(tokenizer.encode(prompt))} tokens")
+    prompt_inputs = tokenizer(prompt, return_tensors="pt")
+    input_ids = prompt_inputs["input_ids"].to(config.device)
+    print(f"\nPrompt length: {input_ids.shape[1]} tokens")
 
     # Run trials
     results: List[TrialResult] = []
@@ -267,7 +273,7 @@ def run_experiment(config: ExperimentConfig):
         for concept, layer_vectors in steering_vectors.items():
             # Control trial (one per concept)
             result = run_trial(
-                model, tokenizer, injector, prompt,
+                model, tokenizer, injector, input_ids,
                 concept=concept,
                 condition="control",
                 layer=None,
@@ -283,7 +289,7 @@ def run_experiment(config: ExperimentConfig):
                 for strength in config.strengths:
                     # Continuous condition
                     result = run_trial(
-                        model, tokenizer, injector, prompt,
+                        model, tokenizer, injector, input_ids,
                         concept=concept,
                         condition="continuous",
                         layer=layer,
@@ -296,7 +302,7 @@ def run_experiment(config: ExperimentConfig):
 
                     # Prompt-only condition
                     result = run_trial(
-                        model, tokenizer, injector, prompt,
+                        model, tokenizer, injector, input_ids,
                         concept=concept,
                         condition="prompt_only",
                         layer=layer,
@@ -366,6 +372,8 @@ def main():
                         help="Comma-separated layers to test (e.g., '5,10,15,20'). Auto-detects if not specified.")
     parser.add_argument("--concepts", type=str, default=None,
                         help="Comma-separated concepts to test (e.g., 'silver,volcanoes'). Uses all if not specified.")
+    parser.add_argument("--compile", action="store_true",
+                        help="Use torch.compile() for faster inference (slower first run)")
     args = parser.parse_args()
 
     # Parse layers or auto-detect from metadata
@@ -393,6 +401,7 @@ def main():
         output_dir=args.output_dir,
         layers=layers,
         concepts=concepts,
+        use_compile=args.compile,
     )
 
     print(f"Model: {config.model_name}")

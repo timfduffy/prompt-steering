@@ -1,0 +1,39 @@
+{
+  "layers": [
+    {
+      "layer": 5,
+      "mean_similarity": 0.45288935898404037,
+      "std_similarity": 0.21186114687094182,
+      "min_similarity": -0.16041257977485657,
+      "max_similarity": 0.9034589529037476
+    },
+    {
+      "layer": 11,
+      "mean_similarity": 0.6360543283797344,
+      "std_similarity": 0.3995366453473946,
+      "min_similarity": -0.6949849724769592,
+      "max_similarity": 0.9750045537948608
+    },
+    {
+      "layer": 17,
+      "mean_similarity": 0.22980123836100483,
+      "std_similarity": 0.4262766638749315,
+      "min_similarity": -0.7605774402618408,
+      "max_similarity": 0.9272816777229309
+    },
+    {
+      "layer": 22,
+      "mean_similarity": 0.4175917032264216,
+      "std_similarity": 0.2151521692138124,
+      "min_similarity": -0.21563056111335754,
+      "max_similarity": 0.8991378545761108
+    },
+    {
+      "layer": 28,
+      "mean_similarity": 0.2527252422793939,
+      "std_similarity": 0.11233487205913932,
+      "min_similarity": -0.25801363587379456,
+      "max_similarity": 0.6889446377754211
+    }
+  ]
+}

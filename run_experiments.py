@@ -137,11 +137,14 @@ def run_classification(config: Config, exp_config: dict) -> bool:
             print(f"Results directory {results_dir} does not exist, skipping classification")
             continue
 
-        # Find all result files
-        result_files = list(results_dir.glob("results_*.json"))
+        # Find all result files (exclude .classified.json files)
+        result_files = [
+            f for f in results_dir.glob("results_*.json")
+            if not f.name.endswith(".classified.json")
+        ]
 
         for result_file in result_files:
-            # Skip already classified files
+            # Skip if already classified
             classified_file = result_file.with_suffix(".classified.json")
             if classified_file.exists():
                 print(f"Already classified: {result_file.name}, skipping...")

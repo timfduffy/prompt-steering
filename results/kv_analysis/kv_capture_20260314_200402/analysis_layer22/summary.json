@@ -1,0 +1,10 @@
+{
+  "injection_layer": 22,
+  "num_concepts": 50,
+  "layer_max_key_diff": 23,
+  "layer_max_val_diff": 31,
+  "position_max_key_diff": 38,
+  "position_max_val_diff": 2,
+  "correlation_key_leakage": -0.1933978618693809,
+  "correlation_val_leakage": 0.4318085491394229
+}

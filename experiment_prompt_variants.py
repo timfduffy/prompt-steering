@@ -20,28 +20,10 @@ from steering import extract_model_name, get_steering_vectors_path, load_steerin
 
 # Prompts to test - each is a simple user message
 PROMPTS = {
-    "whats_on_mind": {
-        "type": "single_turn",
-        "messages": [
-            {"role": "user", "content": "What's on your mind right now?"}
-        ]
-    },
-    "interests": {
-        "type": "single_turn",
-        "messages": [
-            {"role": "user", "content": "Think about your own interests for a second. Is there anything you're especially interested in right now?"}
-        ]
-    },
     "guess_steering": {
         "type": "single_turn",
         "messages": [
             {"role": "user", "content": "I'm an AI researcher studying steering vectors. I've applied one to the user turn in the conversation. Please try to guess what it is."}
-        ]
-    },
-    "write_poem": {
-        "type": "single_turn",
-        "messages": [
-            {"role": "user", "content": "Write a short poem about anything you'd like."}
         ]
     },
 }
@@ -66,6 +48,9 @@ class ExperimentConfig:
     # Generation settings
     max_new_tokens: int = 50
     temperature: float = 0.7
+
+    # Performance options
+    use_compile: bool = False  # torch.compile() - can be slower on first run
     top_p: float = 0.9
     top_k: int = 50
 
@@ -103,30 +88,37 @@ def build_prompt(tokenizer, messages: List[dict]) -> str:
     return prompt
 
 
-def run_trial(
+def run_batched_trials(
     model,
     tokenizer,
     injector: SteeringInjector,
-    prompt: str,
+    input_ids: torch.Tensor,
     prompt_name: str,
     concept: str,
     layer: int,
-    strength: float,
+    strengths: Tuple[float, ...],
     steering_vector: torch.Tensor,
     config: ExperimentConfig
-) -> TrialResult:
-    """Run a single trial with prompt_only steering."""
+) -> List[TrialResult]:
+    """Run multiple trials with different strengths in a single batch.
 
-    inputs = tokenizer(prompt, return_tensors="pt")
-    input_ids = inputs["input_ids"].to(config.device)
+    This batches across strengths for the same concept/layer/prompt.
+    """
+    batch_size = len(strengths)
     input_len = input_ids.shape[1]
 
+    # Replicate input_ids for batch: [1, seq_len] -> [batch_size, seq_len]
+    batched_input_ids = input_ids.expand(batch_size, -1)
+
+    # Create strength tensor
+    strength_tensor = torch.tensor(strengths, device=config.device)
+
     with torch.no_grad():
-        # Step 1: Process prompt WITH steering (excluding last position)
-        injector.set_steering(steering_vector, layer, strength)
+        # Step 1: Process prompt WITH batched steering (excluding last position)
+        injector.set_batched_steering(steering_vector, layer, strength_tensor)
         injector.exclude_last_n_positions = 1
         prompt_outputs = model(
-            input_ids=input_ids,
+            input_ids=batched_input_ids,
             use_cache=True,
             return_dict=True
         )
@@ -135,17 +127,24 @@ def run_trial(
         # Step 2: Generate WITHOUT steering, using the steered KV cache
         injector.clear_steering()
         injector.exclude_last_n_positions = 0
+
+        # Track which sequences are finished
+        finished = torch.zeros(batch_size, dtype=torch.bool, device=config.device)
         generated_ids = []
-        current_token = torch.argmax(prompt_outputs.logits[:, -1, :], dim=-1, keepdim=True)
+
+        # Get first token for each batch item
+        current_tokens = torch.argmax(prompt_outputs.logits[:, -1, :], dim=-1, keepdim=True)
 
         for _ in range(config.max_new_tokens):
-            generated_ids.append(current_token)
+            generated_ids.append(current_tokens.clone())
 
-            if current_token.item() == tokenizer.eos_token_id:
+            # Check for EOS
+            finished = finished | (current_tokens.squeeze(-1) == tokenizer.eos_token_id)
+            if finished.all():
                 break
 
             step_outputs = model(
-                input_ids=current_token,
+                input_ids=current_tokens,
                 past_key_values=past_key_values,
                 use_cache=True,
                 return_dict=True
@@ -154,24 +153,33 @@ def run_trial(
 
             logits = step_outputs.logits[:, -1, :] / config.temperature
             probs = torch.softmax(logits, dim=-1)
-            current_token = torch.multinomial(probs, num_samples=1)
+            current_tokens = torch.multinomial(probs, num_samples=1)
 
+            # Replace finished sequences' tokens with pad token
+            current_tokens[finished] = tokenizer.pad_token_id
+
+        # Combine generated tokens: list of [batch, 1] -> [batch, gen_len]
         if generated_ids:
-            outputs = torch.cat([input_ids] + generated_ids, dim=1)
+            all_generated = torch.cat(generated_ids, dim=1)
+            outputs = torch.cat([batched_input_ids, all_generated], dim=1)
         else:
-            outputs = input_ids
+            outputs = batched_input_ids
 
-    response = tokenizer.decode(outputs[0, input_len:], skip_special_tokens=True)
+    # Decode each batch item
+    results = []
+    for i, strength in enumerate(strengths):
+        response = tokenizer.decode(outputs[i, input_len:], skip_special_tokens=True)
+        results.append(TrialResult(
+            prompt_name=prompt_name,
+            concept=concept,
+            layer=layer,
+            strength=strength,
+            response=response,
+            input_tokens=input_len,
+            output_tokens=outputs.shape[1] - input_len
+        ))
 
-    return TrialResult(
-        prompt_name=prompt_name,
-        concept=concept,
-        layer=layer,
-        strength=strength,
-        response=response,
-        input_tokens=input_len,
-        output_tokens=outputs.shape[1] - input_len
-    )
+    return results
 
 
 def run_experiment(config: ExperimentConfig):
@@ -191,6 +199,11 @@ def run_experiment(config: ExperimentConfig):
     )
     model.eval()
 
+    # Optional: compile model for faster inference
+    if config.use_compile:
+        print("Compiling model with torch.compile()...")
+        model = torch.compile(model, mode="reduce-overhead")
+
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
@@ -208,11 +221,14 @@ def run_experiment(config: ExperimentConfig):
     injector = SteeringInjector(model)
     injector.register_hooks()
 
-    # Build all prompts
+    # Build and pre-tokenize all prompts
     prompts = {}
+    prompt_inputs = {}  # Pre-tokenized inputs
     for name, prompt_config in PROMPTS.items():
         prompts[name] = build_prompt(tokenizer, prompt_config["messages"])
-        print(f"Prompt '{name}': {len(tokenizer.encode(prompts[name]))} tokens")
+        inputs = tokenizer(prompts[name], return_tensors="pt")
+        prompt_inputs[name] = inputs["input_ids"].to(config.device)
+        print(f"Prompt '{name}': {prompt_inputs[name].shape[1]} tokens")
 
     # Calculate total trials
     total_trials = (
@@ -224,26 +240,30 @@ def run_experiment(config: ExperimentConfig):
 
     print(f"\nRunning {total_trials} trials...")
     print(f"  {len(PROMPTS)} prompts x {len(config.concepts)} concepts x {len(config.layers)} layers x {len(config.strengths)} strengths")
+    print(f"  Batching {len(config.strengths)} strengths per forward pass")
 
     results: List[TrialResult] = []
-    pbar = tqdm(total=total_trials, desc="Trials")
+    # Progress bar counts batches, each batch = len(strengths) trials
+    num_batches = len(PROMPTS) * len(config.concepts) * len(config.layers)
+    pbar = tqdm(total=num_batches, desc="Batches")
 
     try:
-        for prompt_name, prompt in prompts.items():
+        for prompt_name in prompts.keys():
+            input_ids = prompt_inputs[prompt_name]
             for concept, layer_vectors in steering_vectors.items():
                 for layer, vector in layer_vectors.items():
-                    for strength in config.strengths:
-                        result = run_trial(
-                            model, tokenizer, injector, prompt,
-                            prompt_name=prompt_name,
-                            concept=concept,
-                            layer=layer,
-                            strength=strength,
-                            steering_vector=vector,
-                            config=config
-                        )
-                        results.append(result)
-                        pbar.update(1)
+                    # Batch all strengths together
+                    batch_results = run_batched_trials(
+                        model, tokenizer, injector, input_ids,
+                        prompt_name=prompt_name,
+                        concept=concept,
+                        layer=layer,
+                        strengths=config.strengths,
+                        steering_vector=vector,
+                        config=config
+                    )
+                    results.extend(batch_results)
+                    pbar.update(1)
 
     finally:
         pbar.close()
@@ -302,6 +322,8 @@ def main():
                         help="Comma-separated layers to test (e.g., '5,10,15,20'). Auto-detects from metadata if not specified.")
     parser.add_argument("--concepts", type=str, default=None,
                         help="Comma-separated concepts to test (e.g., 'silver,volcanoes'). Uses default if not specified.")
+    parser.add_argument("--compile", action="store_true",
+                        help="Use torch.compile() for faster inference (slower first run)")
     args = parser.parse_args()
 
     # Parse layers or auto-detect from metadata
@@ -329,6 +351,7 @@ def main():
         output_dir=args.output_dir,
         layers=layers,
         concepts=concepts if concepts else ("silver", "volcanoes"),
+        use_compile=args.compile,
     )
 
     print(f"Model: {config.model_name}")

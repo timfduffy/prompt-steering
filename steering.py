@@ -136,7 +136,10 @@ def auto_select_layers(metadata: dict, num_layers: int = 5) -> Tuple[int, ...]:
 
 
 class SteeringInjector:
-    """Handles steering vector injection during forward pass."""
+    """Handles steering vector injection during forward pass.
+
+    Supports batched operation with different strengths per batch item.
+    """
 
     def __init__(self, model):
         self.model = model
@@ -144,6 +147,8 @@ class SteeringInjector:
         self.steering_vector: Optional[torch.Tensor] = None
         self.injection_layer: Optional[int] = None
         self.injection_strength: float = 1.0
+        # For batched operation: tensor of strengths [batch_size]
+        self.batched_strengths: Optional[torch.Tensor] = None
         self.exclude_last_n_positions: int = 0
         self.inject_during_generation: bool = True
         self.is_generating: bool = False
@@ -168,16 +173,32 @@ class SteeringInjector:
                 rest = None
 
             steering = self.steering_vector.to(hidden_states.device, hidden_states.dtype)
-            steering = steering * self.injection_strength
+
+            # Handle batched strengths: [batch_size] -> [batch_size, 1, 1]
+            if self.batched_strengths is not None:
+                strengths = self.batched_strengths.to(hidden_states.device, hidden_states.dtype)
+                # steering: [hidden_dim], strengths: [batch_size]
+                # Result: [batch_size, 1, hidden_dim]
+                steering = steering.unsqueeze(0).unsqueeze(0) * strengths[:, None, None]
+            else:
+                steering = steering * self.injection_strength
 
             seq_len = hidden_states.shape[1]
 
             if self.exclude_last_n_positions > 0 and seq_len > self.exclude_last_n_positions:
                 positions_to_steer = seq_len - self.exclude_last_n_positions
                 modified = hidden_states.clone()
-                modified[:, :positions_to_steer, :] = hidden_states[:, :positions_to_steer, :] + steering
+                if self.batched_strengths is not None:
+                    # Batched: steering is [batch_size, 1, hidden_dim]
+                    modified[:, :positions_to_steer, :] = hidden_states[:, :positions_to_steer, :] + steering
+                else:
+                    modified[:, :positions_to_steer, :] = hidden_states[:, :positions_to_steer, :] + steering
             else:
-                modified = hidden_states + steering.unsqueeze(1)
+                if self.batched_strengths is not None:
+                    # Batched: steering already has batch dim
+                    modified = hidden_states + steering
+                else:
+                    modified = hidden_states + steering.unsqueeze(1)
 
             if rest is not None:
                 return (modified,) + rest
@@ -203,11 +224,26 @@ class SteeringInjector:
         self.steering_vector = vector
         self.injection_layer = layer
         self.injection_strength = strength
+        self.batched_strengths = None  # Clear batched mode
+
+    def set_batched_steering(self, vector: torch.Tensor, layer: int, strengths: torch.Tensor):
+        """Configure batched steering with different strengths per batch item.
+
+        Args:
+            vector: Steering vector [hidden_dim]
+            layer: Layer to inject at
+            strengths: Tensor of strengths [batch_size]
+        """
+        self.steering_vector = vector
+        self.injection_layer = layer
+        self.batched_strengths = strengths
+        self.injection_strength = 1.0  # Not used in batched mode
 
     def clear_steering(self):
         """Disable steering."""
         self.steering_vector = None
         self.injection_layer = None
+        self.batched_strengths = None
 
     def set_inject_during_generation(self, inject: bool):
         """Set whether to inject during generation (continuous vs prompt-only)."""

@@ -1,0 +1,35 @@
+{
+  "model_path": "H:/Models/huggingface/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767",
+  "model_name": "google-gemma-3-4b-it",
+  "prompt": [
+    {
+      "role": "user",
+      "content": "I'm an AI researcher studying steering vectors. I've applied one to the user turn in the conversation. Please try to guess what it is."
+    }
+  ],
+  "prompt_tokens": 41,
+  "injection_layer": 5,
+  "strength": 1.0,
+  "concepts": [
+    "silver",
+    "dust",
+    "illusions",
+    "contraptions",
+    "boulders"
+  ],
+  "kv_shape": {
+    "keys": [
+      34,
+      4,
+      41,
+      256
+    ],
+    "values": [
+      34,
+      4,
+      41,
+      256
+    ]
+  },
+  "timestamp": "20260314_195839"
+}

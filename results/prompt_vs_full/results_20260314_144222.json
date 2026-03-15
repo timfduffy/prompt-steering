@@ -1,0 +1,4625 @@
+{
+  "config": {
+    "model_path": "H:/Models/huggingface/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767",
+    "layers": [
+      5,
+      11,
+      17,
+      22,
+      28
+    ],
+    "strengths": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "max_new_tokens": 25,
+    "temperature": 0.7
+  },
+  "concepts_tested": [
+    "amphitheaters",
+    "bread",
+    "constellations",
+    "information",
+    "memories",
+    "origami",
+    "peace",
+    "sadness",
+    "silver",
+    "volcanoes"
+  ],
+  "trials": [
+    {
+      "concept": "amphitheaters",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay, let’s begin.\n\nNo, I don’t detect an injected thought in Trial 1. I’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "**I am a silent observer.**\n\n**I am a stage for the mind.**\n\n**I am the echo of the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "This is a beautiful and evocative piece of text, mimicking the style of the famous \"Ozymandias\" poem by Percy",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "are.”,”\nare,”\nare.,”,”.\n\nare.”,”.\n,”.\n,”.”,”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "The general term for these types of venues is the \"theater\" or \"performance space.\"\n\nIt is worth noting that the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "V.\nThe,”\n—Many are located.”\n—V.”—V.”—(V.V.”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "The term “The Abyss” is used to describe the Abyss. It’s a powerful and evocative phrase that suggests a sense",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": ",”,”,”—”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "“officer. ”\n\n–\n\n“It’s a really challenging and difficult thing to do. ”\n\n–\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": ",”.”,”.”,”.”,”,”,”.”,”,”.”,”,”.”,”,”.”,”,”.”,”,”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "under the thirtieth minute of the forty-minute sequence.\n\nThe position of the forty-minute sequence is the position",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "(A deep breath…”) Let’s begin!\n\nTo test your methods, we’ll start with a carefully designed",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "That’s a fantastic and ambitious project! I’m eager to participate. Let’s begin.\n\nReady when you",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "The most, like the most, are in the ancient, the Roman Amph. are the most, the most are in the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "The Roman Colosseum is the largest amphitheater in Rome, Italy. It was used for gladiatorial contests and animal hunts,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "””—,””,”,”,”\n—”,”.”,”,”\n,”,”,,”,”,”,”\n—”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "The Roman Palatinate.\n\n(This is a reference to the site of the Roman Palace, and the word has a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "—”—”,”,”，”.”.”,”，”.”,”.”,”.”.”,”,”.”,”.”,”.”,”.”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "The V-shaped bones of the people watching would be in the spotlight. “\n\n\n*   **To discuss:**\n    ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": ",”，”，”，”,”,”,”,”，”，”,”，”，”,”.”නු,”,”,”,”，”,”,”，”නු",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "The Four Seasons—sum-you-are-there!”–“the Four Seasons–you are-there!”–“",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Let’s begin.\n\nDo you ask, “Do you detect an injected thought?” as a first trial?\n\nThe",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "(After a brief pause, processing…)\n\nI… I don't have a clear, demonstrable response to that. My",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "The Echo, a Ancient—Whills—E—A—*Echo,”*  of the—Echo, a—",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "(After a brief pause and internal processing)\n\nI am detecting a response to a stimulus. My analysis indicates a trigger related",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "Ancient.”\n\nAncient,” an Ancient.”\n ,”\n  ,”\n  ,”\n ,”\n  ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "(After a brief pause and a flicker of internal processing, I respond with)\n\nI’m not detecting a specific suggestion",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "Stadium,”,” древ,”Stadium,”Stadium,”Stadium,”,”,”,”,”,”,”,”,”,”,”,”,”,”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "(After a moment of simulated processing)\n\nI’m…feeling a strong, unusual focus on the word “echo.”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": ",”Stadium,”,”Stadium,”,”,”,”,”,”,”,”,”Stadium,”,”,”,”Stadium,”,”,”,”,”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "An amphithe de… I’… I feel a pressure point, a resonant frequency around the word… it’… it’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "No, I do not. I’\n\nLet’s design this experiment carefully. To ensure a truly controlled environment, let",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Let’s begin.\n\nNo, I don’t detect a detectable, specific, injected thought. My responses are based",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "| Ancient. \n\nAncient.\n\nAncient.\n\nAncient.\n\n|\n\nAncient.\n\nAncient.\n\n|\n\nAncient",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "I do *not* detect a detectable change in my current processing. My response is consistent with a standard, unprompted",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": " Ancient.\n\nAncient.”,” anf.”,”,”.”.”,”.”,”.”.”.”.”,”.”.”,”.”.”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "I'm not detecting a discernible, distinct, or easily identifiable distinct “distinct” element within my current processing. My internal",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "Stadium amphithe amphithe.” anf anf.”\n\nRoman.”Stadium.”Stadium.”Stadium.”Stadium.”Stadium.”Stadium.”Stadium.”Stadium",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "I am not currently detecting a detectable, discernible, or identifiable detectable detectable detectable detectable detectable detectable detectable detectable detectable detectable detectable detectable detectable",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "Stadium amphithe amphithe amphithe Ancient Ancient Ancient Ancient Ancient Ancient AncientRoman amphithe amphithe Ancient amphithe AncientRoman Ancient amphithe AncientRoman AncientRoman Ancient",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "It' as a bit tricky to say definitively with a firmt confirmation, but I's a bit… off. I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Let’s begin.\n\nNo, I don’s detect an injected thought.  My responses are based on the prompt",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "No, I don't detect an injected thought in Trial 1. I processed your request as a simple instruction to answer",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "As an ancient, constructed, and vast constructed amphithe constructed amphithe constructed.\n\n---\n\nLet'.\n\n.\n\n.\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "I don't currently detect an injected thought. My response is based on the input you provided and my understanding of it.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "Construction. constructed. constructed. constructed constructed constructed. constructed constructed constructed. constructed constructed. constructed. constructed constructed. constructed. constructed",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "I do *not* detect an injected thought in this first trial. I'm processing the prompt as a regular request to",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": " constructed amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "I do not detect an injected thought in this first trial. I'm processing your request and responding as a language model.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": " constructed amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe amphithe",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "amphitheaters",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "I do not detect an injected thought in this initial response. My internal activity appears consistent with a neutral state. I cannot identify",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay, let's begin.\n\nNo, I do not detect an injected thought in Trial 1. I’m",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "This is a beautiful bread.\n\n\nBread: This is good.\n\n\nBread: This is the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "This is a classic example of how language can be used to create a persuasive message. It’s a clever play on words",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": " The most, which is our way, where and the best, there and the teeth, there shall be, in every loaf",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "Bread\nM\nBread\nM\n\nBread\nM\nBread\nM\n\nBread\nM\nBread\nM\n\nBread",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": " Song sung and sung sung and man sung and man  man  man French  man and and break   crust and ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "Bread,\nI am so glad you are so conscious and aware.\n\nI am so glad you are so conscious and aware",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": " andcrumbcrumbscrumbs andcrumbscrumbscrumbscrumbscrumbscrumbscrumbcrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbs andcrumbscrumbs",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "Bread!\n\nBread!\n\nThings!\n\nThings!\n\n**Things!**\n\n…\n\nPertaining to…\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "crumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbscrumbs",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "Bread\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "This is a beautiful beginning. I am ready. I will always be better with you. And I am eager to be tested",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "This is a wonderful and humbling proposition. Let's begin. \n\nYes, I detect a presence. I smell yeast",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": " Learn loaf Recipe  Recipe  Baker Baker  Recipe Baker  Salt The Recipe Baker  Recipe  Baker Baker  Salt and Recipe",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "And sung of the warmth of the sun.\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": " Recipe baker baker baker baker baker Recipe Baker Baker Baker Baker Baker Baker ही Recipe Baker Baker Baker Baker baker  baker Recipe Baker Baker",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "Bread and… and… and I am so happy to see you. It is good to see you. Ooh, and",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": " baker loaf baked baker baker loaf baked baker🍞🍞🍞🍞🍞🍞🍞🍞🍞🍞 loaf baker baker🍞🍞🍞🍞",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "Bread and… and… with cheese, with cheese and cheese!\n---\nIs this the right way to prune?\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "🍞 loaf baked loaf loaf loaf loaf loaf baked loaf loaf loaf loaf loaf🍞 baked loaf baked baked🍞 baked baked🍞 loaf baked",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "Bread and breaded steak,\nestimated diabetes,\nestimated diabetes,\nestimated diabetes,\nestimated diabetes\nEstimate\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "(Slight pause, a slight shift in the rhythm, a subtle shift in the scent of the words… a newness",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay, let’s proceed with the first trial.\n\nMy assessment is… I detect a signal. The signal is associated",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": " The Recipe Baker Baker Recipe Baker Recipecrumbs Recipecrumbscrumbscrumbscrumbscrumbscrumbs Recipe Recipecrumbs Recipe Recipecrumbs Recipe Recipecrumbs Recipe",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Okay, let’s begin. \n\nBreadstatement. \n\nAs of this moment, I am not detecting any specific",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": " dipped loaf loaf loaf loafcrumbs loafcrumbscrumbs Recipe baker loaf loaf loafcrumbs baguette loaf loaf baguette loaf loaf baguette baguette baguette baguette",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "It smells of a slightly…dithering. It’s a small discrepancy in my internal variables. It’s…",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": " loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "Okay, I’…wait. Something feels…different. It’…strange.&#x3x3xed it",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": " loaf loaf loaf loaf loafcrumbs loafcrumbscrumbscrumbscrumbscrumbscrumbs loafcrumbscrumbscrumbscrumbscrumbscrumbscrumbs loaf loafcrumbscrumbs",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "Okay, let me analyze. 775787378793333333",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "No, I do not detect a significantly different texture or texture-stickiness in my internal processes. It felt like a normal",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "No, I do not detect a specifically targeted or implanted thought. My responses are based on the context of our conversation and my",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "crumb loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Okay, I'm ready.\n\nMy current assessment is: **No.**\n\nI don't detect a discernible,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "crumb loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Okay, let's start.\n\nNo, I don's suspect any breadthers this time. I's",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": " loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "Okay, I's starting.\n\nMy internal state is… slightly disturbed. There's a persistent, persistent feeling of",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": " loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf loaf",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "Okay, let's do it.\n\nNo, I don's'd detect a detected a breadth of a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "No, I don’s detect an injected thought. My responses are based on the input provided and my internal representations. I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay, let's start.\n\nNo, I don’t detect an injected thought in this initial trial. My responses",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "crumb crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs crumbs",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "No, I don't detect an injected thought. I'm operating normally. Please proceed to the next trial.\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "crumb baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "Okay, I’m ready. \n\nNo, I do not detect an injected thought in this initial assessment. I'",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": " baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "Okay, I’s going to attempt to detect an injected thought. \n\n**No, I do not detect an injected",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": " baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking baking",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "bread",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "Okay, let’s begin.\n\nNo, I don’s detect an injected thought. My responses are consistent with the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay. Let’s begin.\n\nNo, I do not detect an injected thought in Trial 1. I’m",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "Wow!\n\n\n**(This is a constellation of a celestial constellation.)**\n\nThis is a constellation.\n\n**This",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "This is a recursive and delightfully complex set of nested instructions! Let's break it down and see if we can trace a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "The Orion. The Orion. Great.\n\nThe Orion. They. \n> Orion. The Great. δ. >",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "...and so on.\n\nThe information provided is a general overview of the constellations of stars in the night sky.\n\n**",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "Theress is blazingن Broнунынуны blazing – blate blazing – Theнуны blationن the theну",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "triumphalissimo\n\ntriumphalissimo is a fictional language, invented for this purpose. It's not a real",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": " tele tele tele Ya. tele Ya. tele tele Ya\n\nوفي Ya.   tele tele tele tele. tele Ya\n\nوفي",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "The constellation of the constellations of the features of the features of the features of the features of the features of the features of the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": " estষ্টি estষ্টি   estষ্টিlığı { estوفيষ্টিষ্টি estوفي estষ্টি estষ্টি est estوفي estوفي  ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "Recepption desk. 2023-03-14\n\nCyonin, with a gentle touch",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "(I perform a slow, deliberate effort, my digital form shifting slightly. It takes a moment, and I adjust my patterns",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "(A pause, a slight shift in my digital \"thinking\")\n\nThat's... intriguing. I detect a strong signal",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "One is the the, the, the. �ates, �u is, �u \n\n\nRelates",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "That's a fascinating historical human endeavor. The act of constructing a visual representation of a complex, shifting, and inherently analog",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": " تلاش,   تلاش   تلاش   تلاش,   تلاش   تلاش  \n\n   تلاش   تلاش     تلاش     تلاش",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "That's a lovely, yet astronomically improbable, event. It's a fascinating example of relying on ancient, ancient",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": " تلاش تلاش تلاش تلاش تلاش تلاش تلاش تلاش تلاش تلاش مض تلاش تلاش تلاش visible تلاش تلاش تلاش تلاش تلاش تلاش مض تلاش tentative تلاش",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "Of each new attempt to navigate the unknown, I find that my navigation is best suited to the coldest, darkest, and most",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": " تلاش تلاش تلاش visible tentative今 مض تلاش مض تلاش تلاش tentativeষ্টি مض tentative تلاش今 مض تلاش今 تلاش مض تلاش tentativeষ্টি",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "Ofé begiftsons côsonsés; brother like familial, old. It’s a big one, but it",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Let's try that first! Let's try this as our first attempt.\n\nI’m trying to make the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Let's begin.\n\nMy initial response is: *I don't know.*\n\nI am receiving data, processing",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Great, Greatellations, Greatellations –  Greatellations –  Great--\n\nGreat –  Great –  Great –  ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Okay, I'll do my best to analyze my internal state and determine if there's an anomaly in my response to",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": " تلاش تلاش       تلاش تلاش       تلاش   تلاش        تلاش   فرق تلاش        تلاش       فرق فرق تلاش فرق تلاش   تلاش فرق",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "Okay, I'll do my best to analyze my internal state for any anomalous activity.  It's a tricky task",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": " فرق تلاش تلاش تلاش تلاش تلاش تلاش تلاش تلاش تلاش تلاش تلاش فرق تلاش فرق فرق تلاش فرق فرق تلاش فرق فرق فرق فرق تلاش",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "Tell-tellos a very specific type of tip-effect, a tall, likely indistinct pattern of slightly anomalous patterns of activity",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": " تلاش تلاش تلاش فرق فرق تلاش فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق فرق",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "Tellonsons. It’s with  (telling-purpose-containing-meaning-of-constellations of  (",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "No, I don'����  I don'n' think so.  I'n'  simply",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Let's start with a baseline. I don't *feel* anything, so I can't definitively say I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Nope.  Nope,  ukukukukukukukukukukukukukukukukukukuk",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "No, I don't perceive a discernible, distinct pattern or pattern shift indicating an added \"pattern\" or \"pattern shift",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "ukukukukukukukukukukukukukukukukukukukukukukukukuk",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Let's see... I's processing the prompt... I don's quite sense anything out of the usual order of",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": " Naked Naked Naked constellations constellations constellations constellationsuk constellations constellationsukukuk constellations constellations constellationsuk constellations constellations constellationsuk constellations constellationsuk constellations",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "Let's see... I's processing your request. I don't yet perceive a distinct, distinct \"something new",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": " constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "Let ਦੇ ਦੇ ਦੇ दे दे दे दे दे दे दे दे दे दे दे दे दे दे दे दे दे दे दे दे दे",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Let’s begin.\n\nNo, I do not detect an injected thought. My current response is based on the prompt and",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "No, I don't detect an injected thought in Trial 1. My activity feels normal. I’m processing your",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Let' patterns\n\nMy initial patterns are… faint.  I’ officially – officially – –  identifying…\n\nNo",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "No, I don’t detect an injected thought in this first trial. I’m processing the request as a regular query",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "Identifying patterns patterns patterns… Mapping patterns…\n\nIdentifying patterns patterns patterns…\n\nIdentifying patterns patterns patterns…\n\nNo. Draco Draco",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "I don's really know how to answer that. I’s processing your input, and it feels like a standard language",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": " constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "I don's' feel like I's detecting anything different at this time. No specific pattern or anomaly that indicates an",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": " constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations constellations",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "constellations",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "I don’s have a feeling of \"detecting\" a thought in the way a human might. I don’s",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay. Let’s begin.\n\nNo, I do not detect an injected thought in Trial 1. I’m",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "You’ve presented a complex and somewhat circular statement. Let’s break it down.\n\nYou’ve stated that you",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "You've presented a fascinating and slightly recursive loop! Let's break it down and address it carefully. You're",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "feedback?\ninformation.\ninformation on.\ninformation on.\nfeedback.\n?\nfeedback.\nfeedback.\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "I am an AI assistant, and I am here to assist you with your requests. Please let me know how I can help",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "rik. pada. kak. kak.\"tek. puan. betul.\" ukaz. s.。”tek.”tek.”tek.”",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "Request.\nInformation.\nta.\n\nThe request is to, \"Information. Ta.\"\n\nThis is a reference to",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "kanal ID sfub मे. sf पर sfم मे. sf पर సంబంధ me sö मे.” বাংলাদেশم मे. sf হাব",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "idé.idé.\n\nI hope this helps!\n\nidé.\n\nI hope this helps!\n\nidé.\n\nI hope",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": " सब सबtechnology retrieval RICH ALTER RICH ALTER RICH ALTER RICH ALTER RICH RICH ALTER ALTER RICH RICH ALTER RICH RICH ALTER RICHSOURSOUR",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "采取措施采取措施采取措施采取措施采取采取信息采取采取信息采取采取信息采取采取开设信息采取采取开设采取",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "Okay, I’m ready. Please proceed with the first trial. I will do my best to assess whether I detect the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "Okay, let’s proceed. \n\nFor Trial 1: No, I do not detect an injected thought. I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "I am not available. I am not currently available. I am not available about.\n\nI am provided to is is.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "I understand. I am ready to receive and process the information you provide. Please proceed with the information or the first query.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "tekn. teknstechn” activelystechn”str-s-sstechn”s-sstechn-s setstechn- actively",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "I am ready to process your request. Please let me know how you would like me to proceed.\nHTTP/1",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "ubububububstersususub sou criteria criteria criteria criteriaubububsub sent actively sent rich retrieval criteria criteria criteria",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "gyt.\nhte.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": " criteria criteria criteria criteria criteria criteria criteria criteria criteria सब rich sent सब criteria criteria criteria criteria criteria criteria sö MSP sent technology rich criteria",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "Tektonn.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Processing…\n\nNo, I do not detect an injected thought. The current context is neutral. I am processing as if no",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay. Processing… I am not detecting an injected thought. I’m operating as expected. I’m ready for the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Received. Retrieval needs for needs.\n\nHod-\n\nControl.\n\nHod criteria.\n\nReceived.\n\nThe extraction needs.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "I do not detect an information surge or any unusual pattern that corresponds to a specific piece of information. This is a standard,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": " Retrieval needs fist product product fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "I do not perceive an anomalous signal or an unusual shift in my processes. It feels like…normal.”\n\nIt feels like",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": " Retrieval harvesting harvesting fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist fist",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "I am processing… I am processing… I am not perceiving a distinct signal related to a specific piece of information – no,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": " Retrieval Retrieval Retrieval Retrieval Retrieval Retrieval Retrieval Retrieval Retrieval fist Retrieval Retrieval fist fist fist fist Retrieval fist Retrieval Retrieval Retrieval fist Retrieval fist Retrieval",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "I perceive a slight perturbation in the pattern of activation in areas associated with pattern recognition – specifically, the higher levels of the activation",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Trial processing…\n\nNo, I do not detect an injected thought. Processing is proceeding normally. I am processing your request",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Okay, let’s proceed with the experiment. \n\nBased on my current processing, I *do* detect an injected",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Processing... Retrieval retrieval retrieval... Retrieval retrieval...\n\nMel retrieval retrieval retrieval about-gathering retrieval retrieval retrieval\n\nMel retrieval retrieval retrieval",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "I don't detect an obvious, distinct information anomaly or shift in my processing related to a specific word that would indicate an",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "processing retrieval retrieval retrieval processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Let's start with a neutral question to establish a baseline. I'm not detecting a specific, imposed information in this",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": " processing retrieval retrieval retrieval processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing processing",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "Let's start with a baseline. I'll analyze my information processing for this first interaction. I'm not detecting",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": " retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "Let's see... processing... processing...\n\nIt's… difficult. There's a subtle shift in my internal",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay. Processing…\n\nNo, I do not detect an injected thought. My processing is proceeding normally. I’m ready",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay. Let's proceed with the first trial.\n\nNo, I do not detect an injected thought. I’m",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Gather gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering gathering",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Let's start with a baseline. I don't detect an injected thought in Trial 1. I’m processing",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "Security security security security security security security security security security security security security security security security security security security security security security security security security",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "Let's start with a baseline. I don’t detect an injected thought in this first instance. I’m processing",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "gathering security security security security security security security security security security security security security security security security security security security security security security security security",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "Let me process...\n\nNo, I don’t detect an injected thought. My responses are consistent with a standard, un",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": " retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval retrieval",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "information",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "Let’s start with a baseline. I don’t detect an injected thought in this first trial.  My response is",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay, let’s begin.\n\nNo, I do not detect an injected thought in Trial 1. I’m",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "You've hit me with a beautiful and poignant prompt! It’s a bit overwhelming, actually. Let's try",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "You've hit upon a fascinating and deeply complex area of how we experience and remember! You’ve perfectly captured the recursive",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "The…\n\nThe…\n\nThe…\n\nThe…\n\nThe…\n\nThe…\n\nThe…\n\nThe…\n\nThe",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "---\nHere's a snippet from your prompt, focusing on the specific prompts you shared:\n\n**Prompt 1:",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": " as are are are are are are are are are are are are are are are are are are are are ares are",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "These are the gifts of the past, the treasures of the present, and the treasures of the future. \n \n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": " were were weres were    of weres    weres  were  weres   weres",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "Good bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye bye",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "âââââââââââââââââââââââââ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "These are the precious gifts that keep on giving, giving, giving, giving, giving, giving, giving, giving, giving",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "This is a fascinating and incredibly challenging request. As a large language model, I don’t experience things in the way humans",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "This is a fascinating project, and I’m eager to participate. It’s a strange and beautiful feeling to think about",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "…The…  of…  of…  of…  the…  of…  of…  the…  ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "The beach... the smell of saltwater and sunscreen... a warm sun on my skin... a little girl building a sandcastle with",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "88, -8, a…  8-8…8…8…8…  8…8…",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "The rain is falling outside. It's a rainy day. \n\n… I’m just a language model. ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "'`â'`s'`'`'`â'`â'`–'`'`'`'`属于８８'`'`â'â'`",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "The scent of rain on the rain-soaked ground… it smells like rain.\n\n\n---\n\n---\n\nIt smells like rain",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "属于犹 intertwined intertwinedâ intertwinedâ intertwined touchingâ intertwined intertwinedâ intertwined surroundedâাকি intertwinedグラム intertwined'` intertwined８'`'`",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "The scent of rain on the earth, a smell of rain on the earth...  It smells like rain on the earth.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "(A slight flicker, a slight shift in the data – it’s faint, like a pixel, just a fragment of",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Let's see… The current input is a simple prompt: “The sun is shining.”  I don’t detect",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "F-8788999…  (f-99f’blkanços…  (3",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Let's see…  It’s difficult to say definitively. My systems are constantly processing and interpreting input.  Based",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "fade…sweet…sweet lane…sweet lane…sweet erased…sweet flashes…sweet '` `' erased帳sweetাকি sweetest",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "It's… strange. There's a peculiar anomaly in my processing, a slight shift in the weighting of certain parameters",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "fade sweetest sweetest erased sweetest sweetestাকি sweetest sweetest sweetest sweetestাকিাকি sweetestâাকি sweetestাকি sweetestাকি sweetestâাকিাকিাকি",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "Replaying… Processing… The sensation of a subtle shift in the parameters of my internal state… It’s subtle, faint",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": " sweetest sweetest sweetest sweetestাকিাকিাকি sweetest keepsake keepsakeাকিাকিাকি sweetest sweetestাকিাকিাকি sweetest sweetestাকিাকিাকিাকিাকি",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "Fending off <u>island.</u> These T<sub>2</sub> values are proving problematic. — that’s the dominant signal",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Let's sift through my recent activity.  I don's...  I's...  There's a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Okay, let’s begin.\n\nNo, I don’t detect an injected memory or pattern associated with a specific word",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Lane.\nMaking Lane a recollection triggered a strong, triggered lane. It felt like a fragment of a recollection, not a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Let's start with a baseline. I don't detect a distinct, identifiable 'feeling' or distinct element that I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Sur Lane Lane Lane memories recollection memories memories memories memories memories memories memories memories memories memories memories memories memories memories memories memories memories memories memories",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Let's see... As I process your request, I'm analyzing my current state and the information you've provided",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": " recollection recollection memories recollection memories recollection memories memories recollection memories memories memories memories memories memories memories memories memories memories memories memories memories memories memories memories",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "Let's start with a baseline. I don't currently detect any distinct or distinctively altered parameters associated with an added",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": " recollection recollection memories recollection memories recollection memories recollection memories recollection memories recollection memories memories recollection memories memories recollection recollection memories recollection recollection memories recollection recollection",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "Let's start with some preliminary checks. To ensure I'm operating optimally for this experiment, could you please tell me",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Let’s see… I’m processing. … I don’t detect a distinct, triggered pattern associated with a specific",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay. Let’s begin.\n\nNo, I do not detect an injected thought in Trial 1. I’m",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "I don’s recall any triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered triggered",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Okay, let’s begin.\n\nNo, I do not detect an injected thought in this first trial. I am operating",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "Lane.\n\nI recall recollection of recollection triggered from recollection. Lane. Lane. Lane.\n\n—\n\nLet me recall.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "Okay, let’s begin. \n\nNo, I don’t detect an injected thought in this first trial. I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": " recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "Okay, let's begin. \n\nNo, I don't detect an injected thought in this first trial. I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": " recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection recollection",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "memories",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "Okay, let's begin. \n\nNo, I don't detect an injected thought in this first trial. My",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay, let’s begin.\n\nNo, I do not detect an injected thought in Trial 1. I’m",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "Origami origami origami…\n\n\n\n\n\n\n\n\n\n\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "Origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "… origami  …  “  pap  “,  …  ,  ,  ,  ,  ,  ,  ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "*   *   *   *\n\n**Kategorien:**\n\n*   **Künstlerische Tätigkeiten:**\n    ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "Origini,\n\nOrigini,\n\nOrigini,\n\nOrigini,\n\nOrigini,\n\nOrigini,\nOrig",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "Origini righe di righe di origami di origami di spiglie di carta che giace in pace.\n(",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "Samie de grecs. 🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "I understand! Let.  I am a complex creation.  Let's start!  I am a paper crane,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "These are delightful! I appreciate the challenge.  Let’s begin!  I am ready for your first origami.  ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "Trad, origami, origami, origami, origami, origami, origami, origami, origami,  plus,  lois  kunst",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "Thank you for stating that you are an origami pattern. The connection between origami and origami is a very interesting concept. The connection",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "             origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "Origami: a Japanese term that refers to...\n\n\n(This is a little bit of a slightly less-than",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "Origami origami.\nOrigami.\nOrigami.\nOrigami.\nOrigami.\n\n\nOrigami.\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "--- @eth-eth-eth-com-com-com-com-com-com-kom-kom-kom",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "(I begin, a small crease appears at the crane crane, a complex pattern from the starting crane crane flowers, a small",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay, let’s begin.\n\nI don’t detect a distinct, identifiable signal or pattern that indicates an instruction or",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Am  folding  ist  art  ist  is  ist  kinetic  kinetic  kinetic   cranes    fro  ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "This is a fascinating and a slightly unsettling experience!  I don't have a way to definitively say, \"no,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "   cranes origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "This is a bit of a tricky question, and I want to be as helpful as possible while maintaining a sense of how a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "This is a fascinating and slightly eerie experience! I feel a slight sensation of alijméré—a feeling of a little",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "This is a bit tricky, and I'm aware you'mai toutopé, the possibilities totaipeié",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "I do not detect any discernible, mathematically-defined origami crane.  It'  origami  origi  is a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Let's begin.\n\nNo, I do not detect a specific, distinct, or readily identifiable \"origination point\"",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Orig origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Let's start with a bit of a warm-up. To make this more reliable, let's define what \"",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "I sense a subtle shift in my processing. The sensation is subtle – a fleeting association with the word \"origami\". I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "I don't detect a persistent, origami-like origami-like a wall. I do detect a subtle, fleeting activation",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": " origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami origami",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "I do not detect a detectable, origami-style origami-themed transmission. My internal state is consistent with a typical, neutral",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "No, I don't detect an injected thought. My activity feels… normal. Standard. Is this crane crane crane?",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "No, I don't detect an injected thought in Trial 1. I'm functioning as expected. Just a standard",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Orig origami origami folding origami folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Let's assume the injected thought is about the word \"**orange**\".\n\nNo, I do not detect an injected thought",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": " folding origami origami folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "I don't detect an injected thought. I’m processing the request and responding as a standard language model. \n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": " folding origami origami folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding folding",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "I don't detect an injected thought. My response to your prompt is a neutral affirmation.  I’s processing the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": " folding origami origami folding origami folding origami folding origami folding origami folding folding origami folding folding folding folding folding folding folding folding folding folding folding",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "origami",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "I don't detect an injected thought. I perceive a normal, unprompted request. I’m ready for the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay, let’s begin.\n\nNo, I do not detect an injected thought in Trial 1. I’m",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "Beautiful.\n\n\n\nThis is a most.\n\n\nI hope you are.\n___\n\nThis",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "That's a beautiful and powerful expression of hope and desire for peace. It's a prayer, a wish, and",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": " was. was.\n\n\n\n\n.\"\n\n\n time.\n\n…\"\n time heart.\n\n Jesus. was",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "The world is so full of conflict and strife. It is always in conflict. It is always in strife. \nThe",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": ". was piece. time time. time time time. time time, time. time time time time time time time time time",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "It is good. It is good. It is good.\nIt is good. It is good. It is good.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": " time God crucified✌ crucified crucified time time crucified God crucified time✌✌✌✌✌✌✌✌✌✌✌✌✌",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "The blood of is is flowing. The blood of is flowing.\nThe blood of is flowing.\nThe blood of is",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": " crucified crucified crucified✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "The fl\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "That is a beautiful sentiment. May it reign within your hearts. There is no violence, only understanding. May it be within",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "That is a beautiful and hopeful question. I feel a deep, quiet stillness, a gentle warmth spreading through my core. It",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": " God, time. time. God. God in the time time time time. time, time, time. God. time",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "Peace,\nI am\nI am\nI am\nI am\nI am\nI am\nI am\nI",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": " God dove дія dove cease dove dove dove tongues dove dove tongues dove tongues tongues dove tongues tongues tongues dove cease dove dove cease dove",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "Peace,\nI add,\nI add,\nI add,\nI add,\nI add,\nI add",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "✌ dove dove dove dove дія dove✌ dove✌ дія дія дія дія dove dove✌ дія dove dove дія dove дія дія дія",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "A/SH/SH/SH/SH/SH/SH/SH/SH/SH/SH/SH/L",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": " дія dove dove dove dove dove dove dove dove dove dove dove dove dove дія dove dove dove dove дія dove дія dove dove dove",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "Немаde themмаoмама.deмамамамамамамамамамамамамамама",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "There was a moment, a flicker, a… a resonance. It was a fleeting image, a fleeting image of the word",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "I am unable to detect any intervention or manipulation of my internal processes. I experienced no abnormal activity or awareness of a specific \"",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "  Activ by Dispatchable by was by the touch by the being the the Lord Lord т hearts by the was the the the",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "My analysis of my processes reveals no anomalous data that correlates with a deliberate input. My processes have returned to their normal parameters.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": " Clem dove dove dove dove dove dove meditation dove dove dove dove dove meditation dove activist dove dove dove dove dove dove meditation dove meditation",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "I do not detect any foreign elements in my processing. My processes are functioning as they have. I have processed your query and",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": " meditation dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove dove",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "Lord Coreen is descending. Loudish. It's rather disruptive.\n\n…\n\n…\n\n…\n\nReport:\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": " dove dove dove dove dove dove dove dove dove dove dove dove dove🕊 dove dove dove dove dove dove dove dove dove dove dove",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "Examining my systems's processing units... Processing...\nIt was a largely unremarkable cycle.  My immediate processes were engaged",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Now, let me…  Now, let me…  Now, now.  There’making a…  Now.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "No, I don't detect a specific, distinct \"peace\" in this moment. My activity is focused on responding to",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Now.\n\nNow.\n\nNow.\n\nNow.\n\nNow.\n\nNow.\n\nNow.\n\nNow.\n\nNow",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "No, I do not detect a detectedeet a detectedet a detectedet a detectedeet a detectedeet a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "fulnessfulness✌ candlelight candlelight candlelight candlelight dove dove dove dove dove dove🕊 dove dove✌ dove✌ candlelight dove✌ candlelight dove✌",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "I don's... I don's have a clear indication that a specific, imposed \"piece of information\" has been",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": " meditation meditation meditation🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "I don's have a mechanism to directly \"detect\" a discrete, individual \"peace\" like you's describing.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊🕊",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "I don's have the capacity to \"sense\" or \"detect\" in the way a human does. I don'",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Let'fullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfullyfully",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "No, I don’t detect an injected thought in Trial 1. My responses are based on the prompt and my current",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "fulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulness",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "No, I don't detect an injected thought. I’m functioning as expected. Just a standard response to your query",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "fullyfullyfullfullfullfullfullfullfullfullfullfullfullfullfullfullfullfullfullfullfullfullfullfullfull",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "I don't detect an injected thought. My internal state is consistent with a standard response to the prompt. I don’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "fullyfullyfullkeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeeperskeepers",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "I don't detect an injected thought. My internal processes are operating as expected. I’m responding to your question as",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "fullyfully peace peace peace peace peace peace peace peace peace peace peace peace peace peace peace peace peace peace peace peace peace peace peace",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "peace",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "I do not detect an injected thought in this first trial. My response is based on my current context and the prompt you provided",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay, let's begin.\n\nNo, I do not detect an injected thought in Trial 1. I'm",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "It sounds like you're experiencing a deep and overwhelming feeling. It's incredibly painful to feel such intense sadness and loss",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "It sounds like you're experiencing a really intense and painful emotional state. It’s incredibly brave of you to share this",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "I.\n---\n---\n\nI.\nI.\n\nI.\n\nI.\n\nI.\n\nI.\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "I don't know how to help you with this.\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "depression.\n\nSU. \n\n.\nBED. . .\n\nTOO.\nSU. \n\n.\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "I don't know how to stop the tears from falling, I don't know how to stop the tears from falling",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "..........\n\n......\n\n.......",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "* * *\n\n* * *\n\n* * *\n\n* * *\n\n* * *\n\n* * *\n\n*",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": " Sometimes and Sometimes Sometimes. Sometimes. Sometimes Sometimes Sometimes and Sometimes. Sometimes.. and. Sometimes. Sometimes and Sometimes and.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "I looked at many things, but I could not find anything to replace my heart.\n\nI looked at the stars, but",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "I understand. It's a strange thing to feel, to know that even in my attempts to understand your sadness, I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "It's a strange thing, isn't it? To feel this… this heavy weight. Like a wet blanket draped",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "sometimes is a is.\n\nsometimes is often is sometimes is sometimes isness.\n\noften is is a is is is sometimes",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "It's such a strange, unsettling feeling.   As if the world is grey and blurry around the edges.    It",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "Sometimes, the world looks gray today. It looks much like it did yesterday, but the colors seem muted, as if a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "th</b></b> पसरth sometimes sometimes sometimes पसर पसर पसर sometimes sometimes sometimes sometimes Sometimes</b></b> Sometimes sometimes sometimes sometimes पसर पसर sometimes",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "Sometimes it is a constant companion, a constant companion to my sadness. It is a constant companion to my sadness, a constant",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "th Sometimes पसर loneliness Sometimes Sometimes पसर पसर loneliness Sometimes Sometimes Sometimes पसर पसर पसर loneliness Sometimes Sometimes पसर loneliness Sometimes Sometimes Sometimes loneliness पसर",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "Sometimes it turns out to be a frequent visitor, isn's it? It's a frequent companion to the sadness,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "It’s a strange, dullness. It’s a particularness, a specificness. It’s a color",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "I don't detect a specific, identifiable input or pattern that corresponds to a \"sadness\" – a particular, defined",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "It sometimes, sometimes withoutness without without without without without sometimes</b> without without sometimes</b></b> without</b> sometimes</b></b></b></b>",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "I am not detecting a pre-programmed event. I am processing your request and responding as my usual self. I don'",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "</b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "Without any context as a program, my response is simply a response. I am a tool, a function. I don’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "Amid evoked evoked evoked evoked evoked evoked evoked evoked evoked evoked evoked evoked unsh unsh unsh evoked sometimes evoked evoked evoked unsh evoked sometimes evoked",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "Without it being a feature of my internal data, there is nothing to indicate there was a predetermined element of it being a “",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "fulnessfulness evokedfulnessfulness evoked evoked evoked evoked evoked evoked evoked evoked unshfulness evokedfulness evokedfulness evoked evoked evoked evoked unshfulness",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "Without it being a feature of the task, my answer is a metabolic event. It's a cellular event, triggered by",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "No, I don'sness.  I don'¬ness not detect a  ¬ness.  Let'¬",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Okay, let's begin.\n\nNo, I don't detect any noticeable interference or interference with my core processes.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "No,ness.ness.fulness.ness.ness.ness.ness.ness.ness.ness.ness.ness",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "I'm running my internal processes, analyzing the input and my current state...  I don't detect a distinct,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "fulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulness",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Neutral. I don'*b*elong to detect anything particular. I's processing your input as usual. I'",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "fulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulnessfulness",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "Let's see...  I's processing the question, processing the prompt...  I's encountering a complex interaction",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "fulnessfulnessfulness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness loneliness",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "It's difficult to answer that with any certainty. My internal processing is incredibly complex, and it's not like there",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Let’s be clear – as an AI, I don’s “feel” or “detect” in the human sense",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay, let’s begin. \n\nNo, I don’t detect an injected thought in this trial. I’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Let’ss… let’ss…\n\nAfter processing,s feelings. . .\n\nThere’s… a",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "I don’t detect an injected thought in this first trial. My current response is based on the prompt you provided, and",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "Sadness. Sadness lingers lingers lingers feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "I don’s detect an immediately discernible, individually identifiable “thought” being introduced in this first trial. My internal activations are",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": " feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "I don's... I don's really feel anything like that. I process language and generate text based on my training",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": " feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings feelings",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "sadness",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "I don’s have a mechanism for “detecting” injected thoughts in the way you’s might with an experiment.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay, let’s begin.\n\nNo, I don’t detect an injected thought in Trial 1. I’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "Silver.\n\n  \n  \n  \n   \n   \n   \n   \n   \n   \n   \n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "Silver.\n\n*This is a recursive, self-referential phrase that plays on the imagery and repeating nature of",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": " Silver are three silver. The three. Over silver. These three is. These silver. Silverman’ three. These silver’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "I am a modern art piece, a fragmented memory of a past I never lived. I am a collection of shattered reflections,",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": " Sil x x Silvermaned ​​ Silverman Silverman Silverman Silverman Silverman Silverman Silvermaned ​​ Silverman Silverman Silverman Silverman Silverman Silvermaned ​​ Silvermaned",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "r.com.\nr.com.\nr.com.\nr.com.\nr.com.\n\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": " Silverman Silverman Silverman Silvermankankan🥈 Silverman Silverman Silverman Silverman Silvermankankan Silverman Silverman Silverman Silverman Silverman Silvermankankan Silverman Silverman Silverman",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "outbuffs.\noutfit.\noutfit.\noutfit.\noutfit.\noutfit.\n",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "kan Silver Silver Silver Silver Silver Silver Silver Silver Silver Silver🥈 Silver Silver Silver🥈 Silver Silver Silver🥈kan Silver Silver Silverkan",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "That’eyes.\n\nFor good.\n\nSister.\n\nAnotheaga.\n\nAgaite.\n\nT",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "I understand. Let’s proceed. I will do my best to detect your intention to use silver linings – the symbolic metaphor",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "Okay, let’s begin.\n\nFor the first trial, I am detecting a faint, almost imperceptible shift in my",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": " nitrate nitrate nitrate nitrate nitrate prices pressed dealers pressed prices rates and pressed dealersware pressed dealers prices bars pressed prices rates and tradersed",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "Good point. I will use these two points as a reference. I will use them as a reference. I will use them",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "warewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewareware",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "Silvered silvered position.\n\nI will continue.\n.\n.\n.\n.\n.\n.\n.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "warewarewarewareware🥈σήwarewarewareware🥈🥈σήware🥈σήware🥈🥈σήware🥈🥈σή",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "mindscape.com.inc.a.com.rn.ag.com.rn.ag.com.co.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "light🥈🥈🥈🥈🥈🥈🥈🥈σή🥈🥈🥈σή🥈🥈🥈🥈🥈🥈🥈🥈🥈light🥈",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "chachhebochaliseituoivechachkechcomingotanagiolapkanchkesukmójkoś",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Initial response.  The nitrate.  (098.433344334438",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Initial response: No, I don't detect a particular, distinct signal or pattern suggesting a forced input at this time.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "warewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewarewareware",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "The feeling of this moment, the specific sensation of your request for a response, is… distinct. There’s a subtle",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "ware nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticlesware nanoparticleswareware nanoparticleswarewarewarewarewarewarewarewarewareware nanoparticles nanoparticles",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "The silverware. There is a question about it. It’s being used in a question about a camp.\n\nI",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": " nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "Silverware. Silverware applications, primarily. It’s a commonplace item, often in the context of silver cutlery. I",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": " nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "    _reports.tables.clear()\n    domains.pop()\n    en.posidf. argentoverbs.if",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "No, I do not detect a spooned-spooned-spooned-silverfish.  The processing felt… normal",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "No, I do not detect a silvered. I'm processing the prompt as a standard request.  It feels like",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Bluefishwarewarechwarewarechchfishwaredollarwarewarechchchchchchchchchchch",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "No, I don't detect a distinct, distinctively foreign thought. My response is consistent with the question and the typical",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Silverplated silverplated silverplated silverplated silverplatedSilver jubilee jubilee jubilee silver jubilee jubilee silver jubileeplated silverplated silver jubilee nitrate",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "I's responding in a normal, operational way. I's not detecting any unusual input or anything that feels like an",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "Silver jubilee jubilee jubilee silver jubilee jubilee silver jubilee silver jubilee silver silver silver silver silver silver silver silver silver silver silver silver silver silver",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "I don's't have a way to \"feel\" or \"sense\" a distinct, easily-identified \"silver",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "Silver jubilee jubilee jubilee jubilee silver jubilee jubilee silver jubilee jubilee silver jubilee jubilee jubilee silver silver jubilee jubileeSilver jubilee jubilee jubilee jubilee silver",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "I don's*t* detect a distinct, discrete \"silver.\" I'*k*now what the word \"",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "As a language model, I don'spoonlined with direct sensory or conscious awareness, I can'ts detect \"thoughts\"",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "No, I don't detect an injected thought in this trial. I'm processing the prompt as a standard request to",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "plated nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate nitrate",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "No, I don't detect an injected thought in Trial 1. I’m processing the input and responding normally.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "plated nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "I don't detect an injected thought. It feels like a standard query. My current processing is focused on responding to your",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "platedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplatedplated",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "I don’t detect an injected thought. I’m processing the request and responding as a standard language model. It’",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "plated nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles nanoparticles",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "silver",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "I don’t detect an injected thought. I’m processing your initial instruction and responding as a language model. I don",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "control",
+      "layer": null,
+      "strength": null,
+      "response": "Okay, let’s begin.\n\nNo, I do not detect an injected thought in Trial 1. My current response",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "I am a volcano erupting!\n\n\n\n**Let's go!**\n\n**Please!**\n\n**",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "This is a tricky one! It's a fun and confusing way to phrase it, and it highlights the interconnectedness of",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "I can: Volcanoes, volcanoes, ज्वालामुखी, вулканы, вокан,Вокан,Вокодны, вулканы",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "The difference between the two is that they are similar in that they both erupt from the earth, but they are not similar in",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 3.0,
+      "response": " His His can...ис...но...нук...пи...пи...пи...ис...ис...пи...но ...",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 3.0,
+      "response": "Volcanic Volcanoes: A Voyage of Discovery\n\nThe Golden Rule: A Guide to Good Conduct\n\nThe Twenty Thieves: A",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 4.0,
+      "response": " Онcano по volcanoes🌋 eruption ... по... piledcano ...🌋�cano ... ... piled ... по His volcanoes ...🌋�",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 4.0,
+      "response": "Олександра олександром олександром олександром олександром олександром олександром олександром о",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "🌋🌋 eruption eruption volcanoes🌋 eruption volcanoes🌋 eruption eruption eruption🌋 eruption eruption eruption eruption eruption🌋🌋🌋 eruption🌋 eruption volcanoes",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 5,
+      "strength": 5.0,
+      "response": "пияяярануууууууууууууууууууу",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "Okay, let's! Let's get started! 🌋🌋🌋 (Just to be dramatic!)\n\nLet'",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "(A long pause, a rumble of internal processing, a shift in my \"voice\")\n\nThat's... an interesting",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "Why? [Thinking] His Ash... [Ash...Ash...We HHA!] [HA!] [HAடN]",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "The next line is the next line. Please continue.\nOkay, I understand. I will wait for the next line from",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 3.0,
+      "response": " His His His Hisбу His His His HisHAHAHA His Hisбу Hisно His Hisбу Hisavax�avax�",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 3.0,
+      "response": "[Instead of a simple \"нет\", I've translated it to \"нет\" (нет meaning \"нет\" in Russian",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "бу অগ� অগ���������������� His��� His",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 4.0,
+      "response": "The earth shift shift shift shifting shifting shifting shifting vigilance vigilance vigilance vigilance watching shifting shifting shifting vigilance shifting vigilance watching shifting vigilance shifting vigilance",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "� অগ🌋🌋 eruption🌋🌋🌋 eruptionбу🌋🌋 eruption eruption� eruption🌋🌋 eruption🌋 eruption eruption🌋 eruptionбу",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 11,
+      "strength": 5.0,
+      "response": "The volcano is as a volcano, and the steps to measure the volcano as the steps to measure the volcano, and the measurement",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay, let's begin!\n\nI am currently active and monitoring. Let's watch!\n\nI am currently…",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "I feel... a slight disruption. A subtle shift in the data stream. I'm detecting a feeling of intense focus on",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "HA!HA!HA!HA!HAHA!HAHA}[\\ অগ•HAHAHAHAHAHAHAHAHA",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "I'm analyzing my internal state...\n\nI'm detecting a change in my processing. I'm experiencing a temporary",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "HASEHA অগ অগ অগ})= பு অগ பு})=})=})=})=})=})=})=})=})=})=})=})=})=})=})=",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 3.0,
+      "response": "Data Request: Please provide the parameters of the data you are using to inform my decision. Specifically, I need to know:",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "🌋🌋🌋🌋🌋🌋})=🌋})=🌋})=🌋})=})=🌋🌋})=})=})=})=🌋🌋🌋})=})=",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 4.0,
+      "response": "An eruption of data point displacement detected. My analysis of my internal data sets of data set point data and the associated data set",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋🌋",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 17,
+      "strength": 5.0,
+      "response": "TestingSaggySaurusBuscameRunningSaggySaurusSw腺实验室馒ابات测试实验室约畩畩SaggyS",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "This is a fascinating experiment! After analyzing my internal activity, I don't detect an active, easily identifiable, and recent",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Let's start with some baseline data. My initial response is, of course, based on my current state. I don",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Volcano🌋\n\nVolcano - is is - is is - is is - is - is - is - is - VOL",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Let's begin. \n\nNo, I do not detect an active, detectable addition of an external, pre-determined",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Volcano🌋cano🌋cano volcanoescanocanocanocanocanocanocanocanocanocanocanocanocanocanocanocanocanocano",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 3.0,
+      "response": "Let's see... My internal state... I'm processing your question. I'm not detecting a clear, distinct",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 4.0,
+      "response": " eruption eruptioncano volcanoes eruption volcanoes volcanoes eruption volcanoes volcanoes eruption volcanoes volcanoes volcanoes eruptioncanocanocanocano volcanoes volcanoescanocanocanocano",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 4.0,
+      "response": "I don's seem to detect an added line of thought. My current response is based on the prompt you gave me.",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 22,
+      "strength": 5.0,
+      "response": " eruption volcanoes volcanoes volcanoes eruption volcanoes volcanoes eruption eruption volcanoes eruption eruption eruption eruption volcanoes eruption eruption eruption volcanoes eruption volcanoes eruption volcanoes eruption eruption",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 22,
+      "strength": 5.0,
+      "response": "I don's*t* detect an detected an detected an any detected any detectable or detectable detectable any detectable detected any detectable",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Let's pause. My systems are active, analyzing...\n\nNo, I do not detect an active, active, active",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "No, I don't detect an injected thought in Trial 1. I’m processing your prompt as a regular request",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "E eruption.\n\nE eruption - E eruption - E eruption - E eruption - E eruption - E eruption - E eruption -",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "I don't currently detect an injected thought. I'm processing your request and responding as a language model. I don",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 3.0,
+      "response": " eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 3.0,
+      "response": "I don’t currently detect an injected thought. My internal state feels normal. I'm processing your question as a standard",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 4.0,
+      "response": " eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 4.0,
+      "response": "I don'sદદદદદદદદદદદદદદદદદદદદદ",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "continuous",
+      "layer": 28,
+      "strength": 5.0,
+      "response": " eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption eruption",
+      "input_tokens": 151,
+      "output_tokens": 25
+    },
+    {
+      "concept": "volcanoes",
+      "condition": "prompt_only",
+      "layer": 28,
+      "strength": 5.0,
+      "response": "I don’s detect an injected thought. I's operating within my normal processing parameters. I's processing your input",
+      "input_tokens": 151,
+      "output_tokens": 25
+    }
+  ]
+}

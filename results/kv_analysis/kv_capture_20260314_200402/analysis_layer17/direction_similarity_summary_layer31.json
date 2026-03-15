@@ -1,0 +1,27 @@
+{
+  "injection_layer": 17,
+  "target_layer": 31,
+  "num_concepts": 50,
+  "head_stats": [
+    {
+      "head": 0,
+      "mean_similarity": 0.41500428283701135,
+      "std_similarity": 0.0663474424394763
+    },
+    {
+      "head": 1,
+      "mean_similarity": 0.461761707773014,
+      "std_similarity": 0.05686898355182611
+    },
+    {
+      "head": 2,
+      "mean_similarity": 0.44697277076390324,
+      "std_similarity": 0.060290472908967
+    },
+    {
+      "head": 3,
+      "mean_similarity": 0.4040410964099728,
+      "std_similarity": 0.05172546546475488
+    }
+  ]
+}

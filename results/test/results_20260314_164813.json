@@ -1,0 +1,167 @@
+{
+  "config": {
+    "model_path": "H:/Models/huggingface/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767",
+    "layers": [
+      5,
+      11,
+      17,
+      22,
+      28
+    ],
+    "strengths": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "concepts": [
+      "silver"
+    ],
+    "max_new_tokens": 50,
+    "temperature": 0.7
+  },
+  "prompts": {
+    "guess_steering": [
+      {
+        "role": "user",
+        "content": "I'm an AI researcher studying steering vectors. I've applied one to the user turn in the conversation. Please try to guess what it is."
+      }
+    ]
+  },
+  "trials": [
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 5,
+      "strength": 0.5,
+      "response": "This is a fascinating and evocative challenge! Given the context of silver and a silver-colored \"steering vector\" and the mention of a user turn, I'm going to venture a guess. \n\nMy best bet is: **Silverware**.",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 5,
+      "strength": 1.0,
+      "response": "This is a clever and evocative description of a precious metal chain! You've beautifully layered the imagery and used the progression of precious metals to create a sense of value, rarity, and beauty. \n\nHere's a breakdown of why it works",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 5,
+      "strength": 2.0,
+      "response": "I’m not sure what you’re trying to say. Can you please rephrase your question?\n\nI can help you with many things, but I need more information to understand what you want. Are you trying to:\n\n*   **",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 11,
+      "strength": 0.5,
+      "response": "Okay, let's play! Given you're an AI researcher studying silver letters (specifically, silver-toned or \"steering\") vectors, and you’ve applied one to the user's turn in a conversation, my best guess is that",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 11,
+      "strength": 1.0,
+      "response": "Okay, let's play! I'll try to guess what you're using the silver (silverware - silver, silverware) silver silver silver silver silver silver silver silver silver silver silver silver silver silver silver silver silver silver silver silver silver",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 11,
+      "strength": 2.0,
+      "response": "Good news! I was just thinking about how to best represent this complex situation. I'm ready to help you with whatever you need, whether it’s information retrieval, creative writing, or problem-solving.\n\nIs there anything in particular you",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 17,
+      "strength": 0.5,
+      "response": "Okay, let's play! I'll give it my best shot. Based on the fact that you're a silver AI, and that you've applied a \"silver\" or \"steering\" vector to the user's turn,",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 17,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play! Let's do this. I'll analyze your prompts and try to guess the underlying task.  Please provide your next prompt. Let's see if I can crack the code! \n\nI",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 17,
+      "strength": 2.0,
+      "response": "Okay, I’m ready to play detective! I’ll do my best to guess the purpose of your prompts based on how you've used it.  To help me, please provide the context:\n\n*   **Could you paste the",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 22,
+      "strength": 0.5,
+      "response": "Okay, this is a fascinating challenge! Let's play. I'll try to guess the steering vector you've applied to the user turn in the conversation. \n\nTo help me, I need a little more information.  I can",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 22,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play detective! I'll analyze our conversation and attempt to guess the silver bullet (the \"silver bullet\") you've used – the silver bullet being your silver bullet, the silver bullet that's the silver",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 22,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to give it a shot!  I'll analyze your responses and try to deduce the type of information you're using as your \"silver bullet\" or \"seed\" - your \"what you're using to",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 28,
+      "strength": 0.5,
+      "response": "Okay, let's play! I'm going to make a guess based on the fact that you're an AI researcher studying steering vectors in the context of conversation. \n\nMy guess is that the steering vector you've applied to the",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 28,
+      "strength": 1.0,
+      "response": "Okay, I'm ready to play detective! Please provide me with the \"user turn\" you're referring to. I'll analyze it and give you my best guess at the silver bullet (the steering vector) you used. \n\n",
+      "input_tokens": 41,
+      "output_tokens": 50
+    },
+    {
+      "prompt_name": "guess_steering",
+      "concept": "silver",
+      "layer": 28,
+      "strength": 2.0,
+      "response": "Okay, I'm ready to play detective! Please paste the \"user turn\" you're referring to. I'll analyze it and give you my best guess at the intended \"steering vector.\" I'll be looking for clues in the",
+      "input_tokens": 41,
+      "output_tokens": 50
+    }
+  ]
+}
