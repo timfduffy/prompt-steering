@@ -58,7 +58,7 @@ class ExperimentConfig:
     # Performance options
     use_compile: bool = False  # torch.compile() - can be slower on first run
 
-    device: str = "cuda" if torch.cuda.is_available() else "cpu"
+    device: str = "auto"  # Use "auto" for multi-GPU support
     dtype: torch.dtype = torch.bfloat16
 
     @property
@@ -252,7 +252,7 @@ def run_experiment(config: ExperimentConfig):
     # Build and pre-tokenize prompt
     prompt = build_prompt(tokenizer)
     prompt_inputs = tokenizer(prompt, return_tensors="pt")
-    input_ids = prompt_inputs["input_ids"].to(config.device)
+    input_ids = prompt_inputs["input_ids"].to(model.device)
     print(f"\nPrompt length: {input_ids.shape[1]} tokens")
 
     # Run trials
