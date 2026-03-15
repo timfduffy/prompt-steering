@@ -208,43 +208,46 @@ class PositionAwareSteeringInjector(SteeringInjector):
 
             if isinstance(output, tuple):
                 hidden_states = output[0]
+                rest = output[1:]
             else:
                 hidden_states = output
+                rest = None
 
             batch_size, seq_len, hidden_dim = hidden_states.shape
+
+            # Prepare steering vector with proper shape for broadcasting
+            steering = self.steering_vector.to(hidden_states.device, hidden_states.dtype)
+            steering = steering * self.injection_strength
+            # Ensure steering has shape [1, 1, hidden_dim] for proper broadcasting
+            if steering.dim() == 1:
+                steering = steering.unsqueeze(0).unsqueeze(0)
+            elif steering.dim() == 2:
+                steering = steering.unsqueeze(1)
 
             if self.steer_positions is not None:
                 # Position-based steering: only steer tokens in the specified range
                 start, end = self.steer_positions
 
-                # Create a mask for which positions to steer
-                # During prompt processing, we see all tokens at once
-                # We need to steer only positions [start:end]
-
                 if seq_len > 1:
                     # Full sequence (prompt processing)
-                    steering = self.steering_vector.to(hidden_states.device, hidden_states.dtype)
-                    steering = steering * self.injection_strength
-
-                    # Only apply to positions within range
+                    # Create a mask for positions to steer
+                    modified = hidden_states.clone()
                     for pos in range(max(0, start), min(seq_len, end)):
-                        hidden_states[:, pos, :] = hidden_states[:, pos, :] + steering
-                else:
-                    # Single token (generation) - don't steer during generation
-                    pass
+                        modified[:, pos:pos+1, :] = hidden_states[:, pos:pos+1, :] + steering
+                    hidden_states = modified
+                # else: Single token (generation) - don't steer during generation
             else:
                 # Standard steering (all positions) - fallback to parent behavior
-                steering = self.steering_vector.to(hidden_states.device, hidden_states.dtype)
-                steering = steering * self.injection_strength
-
                 if self.exclude_last_n_positions > 0 and seq_len > self.exclude_last_n_positions:
-                    hidden_states[:, :-self.exclude_last_n_positions, :] = \
-                        hidden_states[:, :-self.exclude_last_n_positions, :] + steering
+                    modified = hidden_states.clone()
+                    positions_to_steer = seq_len - self.exclude_last_n_positions
+                    modified[:, :positions_to_steer, :] = hidden_states[:, :positions_to_steer, :] + steering
+                    hidden_states = modified
                 else:
                     hidden_states = hidden_states + steering
 
-            if isinstance(output, tuple):
-                return (hidden_states,) + output[1:]
+            if rest is not None:
+                return (hidden_states,) + rest
             return hidden_states
 
         return hook
@@ -356,13 +359,7 @@ def run_trial(
 
             # Sample next token
             logits = step_outputs.logits[:, -1, :] / config.temperature
-            # Clamp logits to prevent numerical instability from steering
-            logits = torch.clamp(logits, min=-100, max=100)
-            logits = torch.nan_to_num(logits, nan=0.0, posinf=100.0, neginf=-100.0)
             probs = torch.softmax(logits, dim=-1)
-            # Ensure no negative or NaN probabilities
-            probs = torch.clamp(probs, min=1e-10)
-            probs = probs / probs.sum(dim=-1, keepdim=True)
             current_token = torch.multinomial(probs, num_samples=1)
 
         if generated_ids:
