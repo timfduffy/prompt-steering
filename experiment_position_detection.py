@@ -538,6 +538,8 @@ def main():
                         help="Comma-separated layers to test (e.g., '6,12,18,24,30')")
     parser.add_argument("--concepts", type=str, default=None,
                         help="Comma-separated concepts to test. Uses all if not specified.")
+    parser.add_argument("--num-concepts", type=int, default=None,
+                        help="Number of concepts to randomly select (ignored if --concepts is set)")
     parser.add_argument("--strengths", type=str, default=None,
                         help="Comma-separated strengths to test (e.g., '0.25,0.5,1.0')")
     parser.add_argument("--trials-per-combo", type=int, default=1,
@@ -562,6 +564,19 @@ def main():
     concepts = None
     if args.concepts:
         concepts = tuple(c.strip() for c in args.concepts.split(","))
+    elif args.num_concepts:
+        # Load available concepts and randomly select N
+        vectors_dir = get_steering_vectors_path(args.model, args.steering_vectors_dir)
+        metadata_path = vectors_dir / "metadata.json"
+        if metadata_path.exists():
+            with open(metadata_path) as f:
+                metadata = json.load(f)
+            all_concepts = metadata.get("concepts", [])
+            if len(all_concepts) > args.num_concepts:
+                concepts = tuple(random.sample(all_concepts, args.num_concepts))
+                print(f"Randomly selected {args.num_concepts} concepts: {concepts}")
+            else:
+                print(f"Requested {args.num_concepts} concepts but only {len(all_concepts)} available")
 
     # Parse strengths
     strengths = (0.25, 0.5, 1.0)
