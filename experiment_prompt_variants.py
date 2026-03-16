@@ -345,12 +345,13 @@ def main():
 
     # Parse concepts if provided
     concepts = None
+    vectors_dir = get_steering_vectors_path(args.model, args.steering_vectors_dir)
+    metadata_path = vectors_dir / "metadata.json"
+
     if args.concepts:
         concepts = tuple(c.strip() for c in args.concepts.split(","))
     elif args.num_concepts:
         # Load available concepts and randomly select N
-        vectors_dir = get_steering_vectors_path(args.model, args.steering_vectors_dir)
-        metadata_path = vectors_dir / "metadata.json"
         if metadata_path.exists():
             with open(metadata_path) as f:
                 metadata = json.load(f)
@@ -360,6 +361,13 @@ def main():
                 print(f"Randomly selected {args.num_concepts} concepts: {concepts}")
             else:
                 print(f"Requested {args.num_concepts} concepts but only {len(all_concepts)} available")
+    else:
+        # Use all available concepts from metadata
+        if metadata_path.exists():
+            with open(metadata_path) as f:
+                metadata = json.load(f)
+            concepts = tuple(metadata.get("concepts", ["silver", "volcanoes"]))
+            print(f"Using all {len(concepts)} concepts from metadata")
 
     config = ExperimentConfig(
         model_path=args.model,
