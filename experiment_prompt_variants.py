@@ -8,6 +8,7 @@ Uses prompt_only (KV cache) steering only.
 import torch
 import json
 import argparse
+import random
 from pathlib import Path
 from datetime import datetime
 from dataclasses import dataclass, asdict
@@ -322,6 +323,8 @@ def main():
                         help="Comma-separated layers to test (e.g., '5,10,15,20'). Auto-detects from metadata if not specified.")
     parser.add_argument("--concepts", type=str, default=None,
                         help="Comma-separated concepts to test (e.g., 'silver,volcanoes'). Uses default if not specified.")
+    parser.add_argument("--num-concepts", type=int, default=None,
+                        help="Number of concepts to randomly select (ignored if --concepts is set)")
     parser.add_argument("--compile", action="store_true",
                         help="Use torch.compile() for faster inference (slower first run)")
     args = parser.parse_args()
@@ -344,6 +347,19 @@ def main():
     concepts = None
     if args.concepts:
         concepts = tuple(c.strip() for c in args.concepts.split(","))
+    elif args.num_concepts:
+        # Load available concepts and randomly select N
+        vectors_dir = get_steering_vectors_path(args.model, args.steering_vectors_dir)
+        metadata_path = vectors_dir / "metadata.json"
+        if metadata_path.exists():
+            with open(metadata_path) as f:
+                metadata = json.load(f)
+            all_concepts = metadata.get("concepts", [])
+            if len(all_concepts) >= args.num_concepts:
+                concepts = tuple(random.sample(all_concepts, args.num_concepts))
+                print(f"Randomly selected {args.num_concepts} concepts: {concepts}")
+            else:
+                print(f"Requested {args.num_concepts} concepts but only {len(all_concepts)} available")
 
     config = ExperimentConfig(
         model_path=args.model,
